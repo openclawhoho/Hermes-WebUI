@@ -726,7 +726,6 @@
                     return `
                         <div class="update-item" id="item-${index}">
                             <button class="edit-btn" onclick="toggleEdit(${index})">✏️ 編輯</button>
-                            <button class="delete-btn" onclick="deleteManga(${index})" style="background:#ff4141; color:#fff; border:1px solid #ff4141; margin-left:5px; font-size:var(--tiny-font-size, 7px);">🗑️ 刪除</button>
                             
                             <div class="manga-content">
                                 ${coverHtml}
@@ -788,6 +787,9 @@
                                     <span class="status-badge ${isCompleted ? 'status-completed' : 'status-ongoing'}">
                                         ${isCompleted ? '已完結' : '連載中'}
                                     </span>
+                                    <div style="text-align:right; margin-top:10px;">
+                                        <button class="delete-btn" onclick="deleteManga(${index})" style="background:#ff4141; color:#fff; border:1px solid #ff4141; font-size:var(--tiny-font-size, 7px); padding:2px 6px; cursor:pointer;">🗑️ 刪除</button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
