@@ -65,6 +65,11 @@ from api.helpers import (
     _redact_text,
 )
 
+# ── Manga data file paths (with environment variable override) ─────────
+_MANGA_DATA_DIR = os.environ.get('MANGA_DATA_DIR', os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), 'data'))
+MANGA_DAILY_UPDATE_FILE = os.path.join(_MANGA_DATA_DIR, 'manga_daily_update.json')
+MANGA_KOMGA_MAPPING_FILE = os.path.join(_MANGA_DATA_DIR, 'manga_komga_mapping.json')
+
 # ── CSRF: validate Origin/Referer on POST ────────────────────────────────────
 import re as _re
 
@@ -901,7 +906,7 @@ def handle_get(handler, parsed) -> bool:
         import json
         import os
         try:
-            data_file = '/tmp/manga_daily_update.json'
+            data_file = MANGA_DAILY_UPDATE_FILE
             if os.path.exists(data_file):
                 with open(data_file, 'r', encoding='utf-8') as f:
                     updates_data = json.load(f)
@@ -910,7 +915,7 @@ def handle_get(handler, parsed) -> bool:
                 cover_map = {}
                 author_map = {}
                 date_map = {}
-                mapping_file = '/tmp/manga_komga_mapping.json'
+                mapping_file = MANGA_KOMGA_MAPPING_FILE
                 if os.path.exists(mapping_file):
                     with open(mapping_file, 'r', encoding='utf-8') as f:
                         mapping = json.load(f)
@@ -1745,7 +1750,7 @@ def handle_post(handler, parsed) -> bool:
             status = body.get('status', 'RELEASING').strip()
             
             # 添加到 manga_daily_update.json
-            data_file = '/tmp/manga_daily_update.json'
+            data_file = MANGA_DAILY_UPDATE_FILE
             if os.path.exists(data_file):
                 with open(data_file, 'r', encoding='utf-8') as f:
                     updates_data = json.load(f)
@@ -1786,7 +1791,7 @@ def handle_post(handler, parsed) -> bool:
                 search_url = f"{KOMGA_URL}/api/v1/series?search={manga_name}"
                 resp = requests.get(search_url, headers=headers, timeout=10, verify=False)
                 
-                mapping_file = '/tmp/manga_komga_mapping.json'
+                mapping_file = MANGA_KOMGA_MAPPING_FILE
                 if os.path.exists(mapping_file):
                     with open(mapping_file, 'r', encoding='utf-8') as f:
                         mapping = json.load(f)
@@ -1868,7 +1873,7 @@ def handle_post(handler, parsed) -> bool:
             new_cover_url = body.get('cover_url')
             
             # 讀取現有資料
-            data_file = '/tmp/manga_daily_update.json'
+            data_file = MANGA_DAILY_UPDATE_FILE
             if not os.path.exists(data_file):
                 return j(handler, {'success': False, 'error': '資料文件不存在'}, status=404)
             
@@ -1900,7 +1905,7 @@ def handle_post(handler, parsed) -> bool:
             
             # 更新映射文件中的作者、更新日期、封面URL
             try:
-                mapping_file = '/tmp/manga_komga_mapping.json'
+                mapping_file = MANGA_KOMGA_MAPPING_FILE
                 if os.path.exists(mapping_file):
                     with open(mapping_file, 'r', encoding='utf-8') as f:
                         mapping = json.load(f)

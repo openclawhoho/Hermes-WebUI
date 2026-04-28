@@ -1,0 +1,24 @@
+services:
+  - type: web
+    name: hermes-webui
+    env: python
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: python3 server.py
+    envVars:
+      - key: PORT
+        value: 10000
+      - key: HOST
+        value: 0.0.0.0
+      - key: MANGA_DATA_DIR
+        value: ./data
+      - key: KOMGA_URL
+        value: https://komga.hoooooooo.synology.me:448
+      - key: KOMGA_API_KEY
+        sync: false  # 需要在 Render 控制台手动设置
+      - key: TELEGRAM_BOT_TOKEN
+        sync: false  # 需要在 Render 控制台手动设置
+      - key: TELEGRAM_CHAT_ID
+        sync: false  # 需要在 Render 控制台手动设置
+
+databases: []
