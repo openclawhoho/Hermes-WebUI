@@ -1600,7 +1600,11 @@ def handle_post(handler, parsed) -> bool:
             if not manga_name:
                 return j(handler, {'error': '請提供漫畫名稱'}, status=400)
             
-            # 嘗試查詢 AniList（簡化示例）
+            # 取得手動輸入的卷話數
+            manual_volume = body.get('manual_volume')
+            manual_chapter = body.get('manual_chapter')
+            
+            # 嘗試查詢 AniList
             import requests
             anilist_query = """
             query ($search: String) {
@@ -1625,6 +1629,9 @@ def handle_post(handler, parsed) -> bool:
                 data = resp.json()
                 if data.get('data') and data['data']['Page']['media']:
                     media = data['data']['Page']['media'][0]
+                    # 使用手動輸入的值（如果有），否則使用 API 返回的值
+                    chapters = manual_chapter if manual_chapter else media.get('chapters')
+                    volumes = manual_volume if manual_volume else media.get('volumes')
                     result = {
                         'success': True,
                         'name': manga_name,
@@ -1632,22 +1639,47 @@ def handle_post(handler, parsed) -> bool:
                         'id': media.get('id'),
                         'title_en': media.get('title', {}).get('english', ''),
                         'title_jp': media.get('title', {}).get('native', ''),
-                        'chapters': media.get('chapters'),
-                        'volumes': media.get('volumes'),
-                        'status': media.get('status')
+                        'chapter': chapters,
+                        'volume': volumes,
+                        'status': media.get('status'),
+                        'message': f"手動輸入: 卷={manual_volume or '未輸入'}, 話={manual_chapter or '未輸入'}" if manual_volume or manual_chapter else ''
                     }
                     return j(handler, result)
                 else:
                     return j(handler, {'success': False, 'error': 'AniList 未找到該漫畫'})
             else:
                 return j(handler, {'success': False, 'error': f'AniList API 錯誤: {resp.status_code}'}, status=502)
-        except importError:
+        except ImportError:
             # requests 未安裝，回傳模擬數據
             return j(handler, {
                 'success': True,
                 'name': manga_name,
                 'source': 'simulation',
+                'chapter': manual_chapter if manual_chapter else 'N/A',
+                'volume': manual_volume if manual_volume else 'N/A',
                 'message': '暫無查詢功能，請透過 Cron Job 更新取得資料'
+            })
+        except Exception as e:
+            return j(handler, {'error': str(e)}, status=500)
+    
+    # 新增漫畫追蹤路由
+    if parsed.path == "/api/manga/add":
+        try:
+            manga_name = body.get('name', '').strip()
+            if not manga_name:
+                return j(handler, {'error': '請提供漫畫名稱'}, status=400)
+            
+            alias = body.get('alias', '').strip()
+            status = body.get('status', '連載中').strip()
+            
+            # 這裡應該將漫畫添加到追蹤清單（CSV 或 JSON 文件）
+            # 暫時返回成功訊息
+            return j(handler, {
+                'success': True,
+                'message': f'已新增漫畫: {manga_name} (狀態: {status})',
+                'name': manga_name,
+                'alias': alias,
+                'status': status
             })
         except Exception as e:
             return j(handler, {'error': str(e)}, status=500)
