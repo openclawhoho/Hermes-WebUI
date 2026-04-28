@@ -905,22 +905,92 @@ def handle_get(handler, parsed) -> bool:
             if os.path.exists(data_file):
                 with open(data_file, 'r', encoding='utf-8') as f:
                     updates_data = json.load(f)
+                
+                # 讀取 Komga 封面對應表和作者、更新日期
+                cover_map = {}
+                author_map = {}
+                date_map = {}
+                mapping_file = '/tmp/manga_komga_mapping.json'
+                if os.path.exists(mapping_file):
+                    with open(mapping_file, 'r', encoding='utf-8') as f:
+                        mapping = json.load(f)
+                    for item in mapping:
+                        if item.get('name_trad'):
+                            # 如果有 komga_series_id，使用代理 URL；否则使用原 cover_url
+                            series_id = item.get('komga_series_id')
+                            if series_id:
+                                cover_map[item['name_trad']] = f'/api/manga/cover?seriesId={series_id}'
+                            else:
+                                cover_map[item['name_trad']] = item.get('cover_url')
+                            author_map[item['name_trad']] = item.get('author', '未知')
+                            date_map[item['name_trad']] = item.get('lastModified', 'N/A')
+                
                 updates = []
                 if isinstance(updates_data, list):
                     for item in updates_data[:20]:
+                        name = item.get('name', 'N/A')
                         updates.append({
-                            'name': item.get('name', 'N/A'),
+                            'name': name,
                             'volume': item.get('new_volumes', item.get('volumes', 'N/A')),
                             'chapter': item.get('new_chapters', item.get('chapters', 'N/A')),
                             'status': item.get('new_status', item.get('status', 'N/A')),
-                            'status_class': 'ongoing' if item.get('status') == 'RELEASING' else 'ended'
+                            'status_class': 'ongoing' if item.get('status') == 'RELEASING' else 'ended',
+                            'cover_url': cover_map.get(name),
+                            'author': author_map.get(name, '未知'),
+                            'lastModified': date_map.get(name, 'N/A')
                         })
                 return j(handler, {'updates': updates, 'total': len(updates)})
             else:
                 return j(handler, {'updates': [], 'message': '暫無更新數據，請稍後再試'})
         except Exception as e:
             return j(handler, {'error': str(e)}, status=500)
-
+    
+    # Komga 封面代理 API
+    if parsed.path == "/api/manga/cover":
+        try:
+            import requests
+            from urllib.parse import parse_qs
+            
+            query = parse_qs(parsed.query)
+            series_id = query.get('seriesId', [None])[0]
+            
+            if not series_id:
+                handler.send_response(400)
+                handler.send_header('Content-Type', 'application/json')
+                handler.end_headers()
+                handler.wfile.write(json.dumps({'error': '缺少 seriesId 參數'}).encode('utf-8'))
+                return True
+            
+            KOMGA_URL = "https://komga.hoooooooo.synology.me:448"
+            KOMGA_API_KEY = "ff9de96f228f4fe19b1734b139251d1a"
+            
+            cover_url = f"{KOMGA_URL}/api/v1/series/{series_id}/thumbnail"
+            headers = {"X-API-Key": KOMGA_API_KEY}
+            
+            resp = requests.get(cover_url, headers=headers, timeout=10, verify=False)
+            
+            if resp.status_code == 200:
+                # 返回圖片數據
+                content_type = resp.headers.get('Content-Type', 'image/jpeg')
+                handler.send_response(200)
+                handler.send_header('Content-Type', content_type)
+                handler.send_header('Cache-Control', 'public, max-age=86400')  # 快取1天
+                handler.end_headers()
+                handler.wfile.write(resp.content)
+            else:
+                handler.send_response(resp.status_code)
+                handler.send_header('Content-Type', 'application/json')
+                handler.end_headers()
+                handler.wfile.write(json.dumps({'error': f'Komga API 返回 {resp.status_code}'}).encode('utf-8'))
+            
+            return True
+        except Exception as e:
+            handler.send_response(500)
+            handler.send_header('Content-Type', 'application/json')
+            handler.end_headers()
+            handler.wfile.write(json.dumps({'error': str(e)}).encode('utf-8'))
+            return True
+    
     if parsed.path.startswith("/api/manga/query"):
         return j(handler, {'error': '請使用 POST 方法查詢漫畫'}, status=405)
 
@@ -1665,21 +1735,201 @@ def handle_post(handler, parsed) -> bool:
     # 新增漫畫追蹤路由
     if parsed.path == "/api/manga/add":
         try:
+            import json
+            import os
             manga_name = body.get('name', '').strip()
             if not manga_name:
                 return j(handler, {'error': '請提供漫畫名稱'}, status=400)
             
             alias = body.get('alias', '').strip()
-            status = body.get('status', '連載中').strip()
+            status = body.get('status', 'RELEASING').strip()
             
-            # 這裡應該將漫畫添加到追蹤清單（CSV 或 JSON 文件）
-            # 暫時返回成功訊息
+            # 添加到 manga_daily_update.json
+            data_file = '/tmp/manga_daily_update.json'
+            if os.path.exists(data_file):
+                with open(data_file, 'r', encoding='utf-8') as f:
+                    updates_data = json.load(f)
+            else:
+                updates_data = []
+            
+            # 檢查是否已存在
+            existing = next((item for item in updates_data if item.get('name') == manga_name), None)
+            if existing:
+                return j(handler, {'error': f'漫畫「{manga_name}」已存在於追蹤清單中'}, status=409)
+            
+            # 添加新漫畫
+            new_manga = {
+                'name': manga_name,
+                'name_trad': manga_name,
+                'name_simp': alias if alias else manga_name,
+                'volumes': 0,
+                'chapters': 0,
+                'status': status,
+                'new_volumes': 0,
+                'new_chapters': 0,
+                'new_status': status
+            }
+            updates_data.append(new_manga)
+            
+            # 保存更新後的數據
+            with open(data_file, 'w', encoding='utf-8') as f:
+                json.dump(updates_data, f, ensure_ascii=False, indent=2)
+            
+            # 嘗試從 Komga 搜索該漫畫並添加到映射文件
+            try:
+                import requests
+                KOMGA_URL = "https://komga.hoooooooo.synology.me:448"
+                KOMGA_API_KEY = "ff9de96f228f4fe19b1734b139251d1a"
+                headers = {"X-API-Key": KOMGA_API_KEY, "Accept": "application/json"}
+                
+                # 搜索 Komga
+                search_url = f"{KOMGA_URL}/api/v1/series?search={manga_name}"
+                resp = requests.get(search_url, headers=headers, timeout=10, verify=False)
+                
+                mapping_file = '/tmp/manga_komga_mapping.json'
+                if os.path.exists(mapping_file):
+                    with open(mapping_file, 'r', encoding='utf-8') as f:
+                        mapping = json.load(f)
+                else:
+                    mapping = []
+                
+                if resp.status_code == 200:
+                    series_list = resp.json().get('content', [])
+                    if series_list:
+                        series = series_list[0]
+                        series_id = series.get('id')
+                        cover_url = f"{KOMGA_URL}/api/v1/series/{series_id}/thumbnail" if series_id else None
+                        
+                        mapping.append({
+                            'name_trad': manga_name,
+                            'name_simp': alias if alias else manga_name,
+                            'komga_series_id': series_id,
+                            'matched_by': '手動新增',
+                            'match_ratio': 1.0,
+                            'cover_url': cover_url,
+                            'author': '未知',
+                            'lastModified': 'N/A'
+                        })
+                    else:
+                        # 沒找到，仍然添加到映射（無封面）
+                        mapping.append({
+                            'name_trad': manga_name,
+                            'name_simp': alias if alias else manga_name,
+                            'komga_series_id': None,
+                            'matched_by': '手動新增',
+                            'match_ratio': 0,
+                            'cover_url': None,
+                            'author': '未知',
+                            'lastModified': 'N/A'
+                        })
+                else:
+                    # API 錯誤，仍然添加
+                    mapping.append({
+                        'name_trad': manga_name,
+                        'name_simp': alias if alias else manga_name,
+                        'komga_series_id': None,
+                        'matched_by': '手動新增',
+                        'match_ratio': 0,
+                        'cover_url': None,
+                        'author': '未知',
+                        'lastModified': 'N/A'
+                    })
+                
+                with open(mapping_file, 'w', encoding='utf-8') as f:
+                    json.dump(mapping, f, ensure_ascii=False, indent=2)
+            except Exception as e:
+                logger.debug(f"Komga 搜索失敗: {e}")
+            
             return j(handler, {
                 'success': True,
                 'message': f'已新增漫畫: {manga_name} (狀態: {status})',
                 'name': manga_name,
                 'alias': alias,
                 'status': status
+            })
+        except Exception as e:
+            return j(handler, {'error': str(e)}, status=500)
+    
+    # 更新漫畫資料路由
+    if parsed.path == "/api/manga/update":
+        try:
+            import json
+            import os
+            
+            manga_name = body.get('name', '').strip()
+            if not manga_name:
+                return j(handler, {'error': '請提供漫畫名稱'}, status=400)
+            
+            new_volume = body.get('volume')
+            new_chapter = body.get('chapter')
+            new_status = body.get('status', '').strip()
+            new_author = body.get('author')
+            new_last_modified = body.get('lastModified')
+            new_cover_url = body.get('cover_url')
+            
+            # 讀取現有資料
+            data_file = '/tmp/manga_daily_update.json'
+            if not os.path.exists(data_file):
+                return j(handler, {'success': False, 'error': '資料文件不存在'}, status=404)
+            
+            with open(data_file, 'r', encoding='utf-8') as f:
+                updates_data = json.load(f)
+            
+            # 找到並更新對應的漫畫
+            updated = False
+            for item in updates_data:
+                if item.get('name') == manga_name:
+                    if new_volume is not None:
+                        item['new_volumes'] = int(new_volume) if new_volume else 0
+                        item['volumes'] = int(new_volume) if new_volume else 0
+                    if new_chapter is not None:
+                        item['new_chapters'] = int(new_chapter) if new_chapter else 0
+                        item['chapters'] = int(new_chapter) if new_chapter else 0
+                    if new_status:
+                        item['new_status'] = new_status
+                        item['status'] = new_status
+                    updated = True
+                    break
+            
+            if not updated:
+                return j(handler, {'success': False, 'error': '找不到該漫畫'}, status=404)
+            
+            # 保存更新後的資料
+            with open(data_file, 'w', encoding='utf-8') as f:
+                json.dump(updates_data, f, ensure_ascii=False, indent=2)
+            
+            # 更新映射文件中的作者、更新日期、封面URL
+            try:
+                mapping_file = '/tmp/manga_komga_mapping.json'
+                if os.path.exists(mapping_file):
+                    with open(mapping_file, 'r', encoding='utf-8') as f:
+                        mapping = json.load(f)
+                    
+                    for item in mapping:
+                        if item.get('name_trad') == manga_name:
+                            if new_author is not None:
+                                item['author'] = new_author if new_author else '未知'
+                            if new_last_modified is not None:
+                                item['lastModified'] = new_last_modified if new_last_modified else 'N/A'
+                            if new_cover_url is not None:
+                                item['cover_url'] = new_cover_url if new_cover_url else None
+                            break
+                    
+                    with open(mapping_file, 'w', encoding='utf-8') as f:
+                        json.dump(mapping, f, ensure_ascii=False, indent=2)
+            except Exception as e:
+                logger.debug(f"更新映射文件失敗: {e}")
+            
+            return j(handler, {
+                'success': True,
+                'message': f'已更新漫畫: {manga_name}',
+                'name': manga_name,
+                'volume': new_volume,
+                'chapter': new_chapter,
+                'status': new_status,
+                'author': new_author,
+                'lastModified': new_last_modified,
+                'cover_url': new_cover_url
             })
         except Exception as e:
             return j(handler, {'error': str(e)}, status=500)
