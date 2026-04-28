@@ -896,6 +896,42 @@ def handle_get(handler, parsed) -> bool:
             {"name": get_active_profile_name(), "path": str(get_active_hermes_home())},
         )
 
+    # 漫畫更新查詢路由
+    if parsed.path == "/api/manga/updates":
+        import json
+        import os
+        try:
+            data_file = '/tmp/manga_daily_update.json'
+            if os.path.exists(data_file):
+                with open(data_file, 'r', encoding='utf-8') as f:
+                    updates_data = json.load(f)
+                updates = []
+                if isinstance(updates_data, list):
+                    for item in updates_data[:20]:
+                        updates.append({
+                            'name': item.get('name', 'N/A'),
+                            'volume': item.get('new_volumes', item.get('volumes', 'N/A')),
+                            'chapter': item.get('new_chapters', item.get('chapters', 'N/A')),
+                            'status': item.get('new_status', item.get('status', 'N/A')),
+                            'status_class': 'ongoing' if item.get('status') == 'RELEASING' else 'ended'
+                        })
+                return j(handler, {'updates': updates, 'total': len(updates)})
+            else:
+                return j(handler, {'updates': [], 'message': '暫無更新數據，請稍後再試'})
+        except Exception as e:
+            return j(handler, {'error': str(e)}, status=500)
+
+    if parsed.path.startswith("/api/manga/query"):
+        return j(handler, {'error': '請使用 POST 方法查詢漫畫'}, status=405)
+
+    # 8bit 漫畫查詢頁面
+    if parsed.path == "/manga" or parsed.path == "/manga.html":
+        try:
+            manga_html = open('/Users/ho/hermes-webui/static/manga.html', 'r', encoding='utf-8').read()
+            return t(handler, manga_html, content_type="text/html; charset=utf-8")
+        except Exception as e:
+            return j(handler, {'error': str(e)}, status=500)
+
     return False  # 404
 
 
@@ -1554,6 +1590,67 @@ def handle_post(handler, parsed) -> bool:
         handler.end_headers()
         handler.wfile.write(json.dumps({"ok": True}).encode())
         return True
+
+    # 漫畫查詢 POST 路由
+    if parsed.path == "/api/manga/query":
+        import json
+        try:
+            # 取得漫畫名稱
+            manga_name = body.get('name', '').strip()
+            if not manga_name:
+                return j(handler, {'error': '請提供漫畫名稱'}, status=400)
+            
+            # 嘗試查詢 AniList（簡化示例）
+            import requests
+            anilist_query = """
+            query ($search: String) {
+                Page(perPage: 1) {
+                    media(search: $search, type: MANGA) {
+                        id
+                        title { romaji english native }
+                        chapters
+                        volumes
+                        status
+                    }
+                }
+            }
+            """
+            resp = requests.post(
+                'https://graphql.anilist.co',
+                json={'query': anilist_query, 'variables': {'search': manga_name}},
+                headers={'Content-Type': 'application/json', 'User-Agent': 'Mozilla/5.0'},
+                timeout=10
+            )
+            if resp.status_code == 200:
+                data = resp.json()
+                if data.get('data') and data['data']['Page']['media']:
+                    media = data['data']['Page']['media'][0]
+                    result = {
+                        'success': True,
+                        'name': manga_name,
+                        'source': 'AniList',
+                        'id': media.get('id'),
+                        'title_en': media.get('title', {}).get('english', ''),
+                        'title_jp': media.get('title', {}).get('native', ''),
+                        'chapters': media.get('chapters'),
+                        'volumes': media.get('volumes'),
+                        'status': media.get('status')
+                    }
+                    return j(handler, result)
+                else:
+                    return j(handler, {'success': False, 'error': 'AniList 未找到該漫畫'})
+            else:
+                return j(handler, {'success': False, 'error': f'AniList API 錯誤: {resp.status_code}'}, status=502)
+        except importError:
+            # requests 未安裝，回傳模擬數據
+            return j(handler, {
+                'success': True,
+                'name': manga_name,
+                'source': 'simulation',
+                'message': '暫無查詢功能，請透過 Cron Job 更新取得資料'
+            })
+        except Exception as e:
+            return j(handler, {'error': str(e)}, status=500)
 
     return False  # 404
 

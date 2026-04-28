@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🎮 漫畫更新追蹤器 | 8bit Retro</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            background-color: #0f0f23;
+            color: #00ff41;
+            font-family: 'Press Start 2P', monospace;
+            font-size: 10px;
+            line-height: 1.6;
+            min-height: 100vh;
+            padding: 20px;
+            background-image: 
+                repeating-linear-gradient(0deg, rgba(0, 255, 65, 0.03) 0px, transparent 1px, transparent 2px, rgba(0, 255, 65, 0.03) 3px),
+                repeating-linear-gradient(90deg, rgba(0, 255, 65, 0.03) 0px, transparent 1px, transparent 2px, rgba(0, 255, 65, 0.03) 3px);
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            border: 4px solid #00ff41;
+            padding: 20px;
+            background-color: rgba(15, 15, 35, 0.9);
+            box-shadow: 0 0 20px rgba(0, 255, 65, 0.5),
+                        inset 0 0 20px rgba(0, 255, 65, 0.1);
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 2px dashed #00ff41;
+        }
+        
+        h1 {
+            color: #ff41b4;
+            font-size: 16px;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 0 #0f0f23, 4px 4px 0 #ff41b4;
+        }
+        
+        .subtitle {
+            color: #41b4ff;
+            font-size: 8px;
+        }
+        
+        .search-box {
+            margin-bottom: 30px;
+        }
+        
+        .search-box label {
+            display: block;
+            margin-bottom: 10px;
+            color: #ffff41;
+        }
+        
+        .input-group {
+            display: flex;
+            gap: 10px;
+        }
+        
+        input[type="text"] {
+            flex: 1;
+            background: #0f0f23;
+            border: 2px solid #00ff41;
+            color: #00ff41;
+            padding: 10px;
+            font-family: 'Press Start 2P', monospace;
+            font-size: 10px;
+            outline: none;
+        }
+        
+        input[type="text"]:focus {
+            box-shadow: 0 0 10px rgba(0, 255, 65, 0.8);
+        }
+        
+        button {
+            background: #00ff41;
+            color: #0f0f23;
+            border: none;
+            padding: 10px 20px;
+            font-family: 'Press Start 2P', monospace;
+            font-size: 10px;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+        
+        button:hover {
+            background: #ffff41;
+            transform: scale(1.05);
+        }
+        
+        button:active {
+            transform: scale(0.95);
+        }
+        
+        .updates-section {
+            margin-top: 30px;
+        }
+        
+        .section-title {
+            color: #ff4141;
+            font-size: 12px;
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #ff4141;
+        }
+        
+        .update-item {
+            background: rgba(0, 255, 65, 0.05);
+            border: 1px solid #00ff41;
+            padding: 15px;
+            margin-bottom: 10px;
+            transition: all 0.3s;
+        }
+        
+        .update-item:hover {
+            background: rgba(0, 255, 65, 0.1);
+            transform: translateX(5px);
+        }
+        
+        .manga-title {
+            color: #41b4ff;
+            font-size: 10px;
+            margin-bottom: 5px;
+        }
+        
+        .manga-info {
+            color: #ffff41;
+            font-size: 8px;
+            margin-bottom: 3px;
+        }
+        
+        .status-badge {
+            display: inline-block;
+            padding: 3px 8px;
+            font-size: 7px;
+            border: 1px solid;
+            margin-top: 5px;
+        }
+        
+        .status-new {
+            color: #00ff41;
+            border-color: #00ff41;
+        }
+        
+        .status-updated {
+            color: #ffff41;
+            border-color: #ffff41;
+        }
+        
+        .status-ongoing {
+            color: #41b4ff;
+            border-color: #41b4ff;
+        }
+        
+        .loading {
+            text-align: center;
+            color: #ffff41;
+            padding: 20px;
+        }
+        
+        .error {
+            color: #ff4141;
+            padding: 10px;
+            border: 1px solid #ff4141;
+            background: rgba(255, 65, 65, 0.1);
+            margin-top: 10px;
+        }
+        
+        .success {
+            color: #00ff41;
+            padding: 10px;
+            border: 1px solid #00ff41;
+            background: rgba(0, 255, 65, 0.1);
+            margin-top: 10px;
+        }
+        
+        .pixel-border {
+            position: relative;
+        }
+        
+        .pixel-border::before {
+            content: '';
+            position: absolute;
+            top: -4px;
+            left: -4px;
+            right: -4px;
+            bottom: -4px;
+            background: linear-gradient(45deg, #00ff41 25%, transparent 25%, transparent 75%, #00ff41 75%),
+                        linear-gradient(45deg, #00ff41 25%, transparent 25%, transparent 75%, #00ff41 75%);
+            background-size: 10px 10px;
+            background-position: 0 0, 5px 5px;
+            z-index: -1;
+        }
+        
+        #result {
+            margin-top: 20px;
+        }
+        
+        .scanlines {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 9999;
+            background: repeating-linear-gradient(
+                0deg,
+                rgba(0, 0, 0, 0.15) 0px,
+                rgba(0, 0, 0, 0.15) 1px,
+                transparent 1px,
+                transparent 2px
+            );
+        }
+    </style>
+</head>
+<body>
+    <div class="scanlines"></div>
+    
+    <div class="container pixel-border">
+        <div class="header">
+            <h1>🎮 漫畫更新追蹤器</h1>
+            <div class="subtitle">8bit Retro Style | Powered by Hermes</div>
+        </div>
+        
+        <div class="search-box">
+            <label>🔍 輸入漫畫名稱：</label>
+            <div class="input-group">
+                <input type="text" id="mangaInput" placeholder="例如：天國大魔境" />
+                <button onclick="queryManga()">查詢</button>
+            </div>
+        </div>
+        
+        <div id="result"></div>
+        
+        <div class="updates-section">
+            <div class="section-title">📢 最新更新消息</div>
+            <div id="updatesList">
+                <div class="loading">載入中...</div>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        // 載入最新更新
+        async function loadUpdates() {
+            try {
+                const response = await fetch('/api/manga/updates');
+                const data = await response.json();
+                
+                const updatesList = document.getElementById('updatesList');
+                
+                if (data.updates && data.updates.length > 0) {
+                    updatesList.innerHTML = data.updates.map(update => `
+                        <div class="update-item">
+                            <div class="manga-title">📚 ${update.name}</div>
+                            <div class="manga-info">卷數: ${update.volume || 'N/A'}</div>
+                            <div class="manga-info">話數: ${update.chapter || 'N/A'}</div>
+                            <div class="manga-info">狀態: ${update.status || 'N/A'}</div>
+                            <span class="status-badge status-${update.status_class || 'ongoing'}">${update.status_text || '連載中'}</span>
+                        </div>
+                    `).join('');
+                } else {
+                    updatesList.innerHTML = '<div class="loading">目前沒有更新消息</div>';
+                }
+            } catch (error) {
+                document.getElementById('updatesList').innerHTML = 
+                    `<div class="error">載入失敗: ${error.message}</div>`;
+            }
+        }
+        
+        // 查詢漫畫
+        async function queryManga() {
+            const input = document.getElementById('mangaInput');
+            const mangaName = input.value.trim();
+            
+            if (!mangaName) {
+                alert('請輸入漫畫名稱！');
+                return;
+            }
+            
+            const resultDiv = document.getElementById('result');
+            resultDiv.innerHTML = '<div class="loading">查詢中...</div>';
+            
+            try {
+                const response = await fetch('/api/manga/query', {
+                    method: 'POST',
+                    headers: {'Content-Type': 'application/json'},
+                    body: JSON.stringify({name: mangaName})
+                });
+                
+                const data = await response.json();
+                
+                if (data.success) {
+                    resultDiv.innerHTML = `
+                        <div class="success">
+                            <div class="manga-title">✅ ${data.name}</div>
+                            <div class="manga-info">來源: ${data.source || 'N/A'}</div>
+                            <div class="manga-info">最新話數: ${data.chapter || 'N/A'}</div>
+                            <div class="manga-info">狀態: ${data.status || 'N/A'}</div>
+                            ${data.message ? `<div class="manga-info" style="margin-top:10px;">${data.message}</div>` : ''}
+                        </div>
+                    `;
+                } else {
+                    resultDiv.innerHTML = `<div class="error">查詢失敗: ${data.error || '未知錯誤'}</div>`;
+                }
+            } catch (error) {
+                resultDiv.innerHTML = `<div class="error">查詢失敗: ${error.message}</div>`;
+            }
+        }
+        
+        // 允許按 Enter 鍵查詢
+        document.getElementById('mangaInput').addEventListener('keypress', function(e) {
+            if (e.key === 'Enter') {
+                queryManga();
+            }
+        });
+        
+        // 頁面載入時自動載入更新
+        window.onload = loadUpdates;
+    </script>
+</body>
+</html>
