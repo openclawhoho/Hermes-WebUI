@@ -726,12 +726,17 @@
                     return `
                         <div class="update-item" id="item-${index}">
                             <button class="edit-btn" onclick="toggleEdit(${index})">✏️ 編輯</button>
+                            <button class="delete-btn" onclick="deleteManga(${index})" style="background:#ff4141; color:#fff; border:1px solid #ff4141; margin-left:5px; font-size:var(--tiny-font-size, 7px);">🗑️ 刪除</button>
                             
                             <div class="manga-content">
                                 ${coverHtml}
                                 
                                 <div class="manga-details">
-                                    <div class="manga-title">📚 ${update.name}</div>
+                                    <div class="manga-title">
+                                        📚 ${update.komga_series_id 
+                                            ? `<a href="https://komga.hoooooooo.synology.me:448/series/${update.komga_series_id}" target="_blank" style="color:#00ff41; text-decoration:none; font-size:inherit;" onmouseover="this.style.color='#ffff41'" onmouseout="this.style.color='#00ff41'">${update.name}</a>`
+                                            : update.name}
+                                    </div>
                                     <div class="manga-info" id="author-info-${index}">
                                         <span class="info-display">
                                             作者: ${update.author || '未知'}
@@ -1034,6 +1039,37 @@
                 }
             } catch (error) {
                 resultDiv.innerHTML = `<div class="error">新增失敗: ${error.message}</div>`;
+            }
+        }
+        
+        // 刪除漫畫（含確認對話框）
+        async function deleteManga(index) {
+            const item = allUpdates[index];
+            if (!item) return;
+            
+            // 確認對話框，防止誤觸
+            if (!confirm(`確定要刪除《${item.name}》嗎？\n\n此操作無法復原！`)) {
+                return;
+            }
+            
+            try {
+                const response = await fetch('/api/manga/delete', {
+                    method: 'POST',
+                    headers: {'Content-Type': 'application/json'},
+                    body: JSON.stringify({name: item.name})
+                });
+                
+                const result = await response.json();
+                
+                if (result.success) {
+                    alert('✅ ' + result.message);
+                    // 重新載入列表
+                    loadUpdates();
+                } else {
+                    alert('❌ 刪除失敗: ' + (result.error || '未知錯誤'));
+                }
+            } catch (error) {
+                alert('❌ 刪除失敗: ' + error.message);
             }
         }
         

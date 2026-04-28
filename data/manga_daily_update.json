@@ -3,12 +3,15 @@
     "num": "1",
     "name": "天國大魔境",
     "anilist_id": 101942,
-    "chapters": null,
-    "volumes": null,
+    "chapters": 81,
+    "volumes": 10,
     "status": "RELEASING",
     "updated": "2026-04-28",
     "title_en": "Heavenly Delusion",
-    "title_jp": "天国大魔境"
+    "title_jp": "天国大魔境",
+    "new_volumes": 10,
+    "new_chapters": 81,
+    "new_status": "RELEASING"
   },
   {
     "num": "2",

@@ -5,7 +5,9 @@
     "komga_series_id": "0Q75YP4K33TG8",
     "matched_by": "天國大魔境",
     "match_ratio": 1.0,
-    "cover_url": "https://komga.hoooooooo.synology.me:448/api/v1/series/0Q75YP4K33TG8/thumbnail"
+    "cover_url": "/api/manga/cover?seriesId=0Q75YP4K33TG8",
+    "author": "未知",
+    "lastModified": "N/A"
   },
   {
     "name_trad": "關於我轉生變成史萊姆這檔事",

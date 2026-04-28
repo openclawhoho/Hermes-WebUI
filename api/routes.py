@@ -932,8 +932,14 @@ def handle_get(handler, parsed) -> bool:
                 
                 updates = []
                 if isinstance(updates_data, list):
-                    for item in updates_data[:20]:
+                    for item in updates_data:
                         name = item.get('name', 'N/A')
+                        # 從映射中獲取 komga_series_id
+                        series_id = None
+                        for m in mapping:
+                            if m.get('name_trad') == name:
+                                series_id = m.get('komga_series_id')
+                                break
                         updates.append({
                             'name': name,
                             'volume': item.get('new_volumes', item.get('volumes', 'N/A')),
@@ -942,7 +948,8 @@ def handle_get(handler, parsed) -> bool:
                             'status_class': 'ongoing' if item.get('status') == 'RELEASING' else 'ended',
                             'cover_url': cover_map.get(name),
                             'author': author_map.get(name, '未知'),
-                            'lastModified': date_map.get(name, 'N/A')
+                            'lastModified': date_map.get(name, 'N/A'),
+                            'komga_series_id': series_id
                         })
                 return j(handler, {'updates': updates, 'total': len(updates)})
             else:

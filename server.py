@@ -20,6 +20,7 @@ from api.profiles import set_request_profile, clear_request_profile
 from api.routes import handle_get, handle_post
 from api.startup import auto_install_agent_deps, fix_credential_permissions
 from api.updates import WEBUI_VERSION
+from api import manga_delete
 
 
 class QuietHTTPServer(ThreadingHTTPServer):
@@ -90,7 +91,13 @@ class Handler(BaseHTTPRequestHandler):
         try:
             parsed = urlparse(self.path)
             if not check_auth(self, parsed): return
-            result = handle_post(self, parsed)
+            
+            # 檢查是否是刪除請求
+            if parsed.path == "/api/manga/delete":
+                result = manga_delete.handle_delete(self, parsed)
+            else:
+                result = handle_post(self, parsed)
+            
             if result is False:
                 return j(self, {'error': 'not found'}, status=404)
         except Exception as e:
