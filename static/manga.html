@@ -392,7 +392,7 @@
         }
         
         /* 刪除按鈕容器 */
-        #updatesList > .update-item > div[style*="text-align:right"] {
+        /* 舊的 CSS，已棄用 */
             position: absolute;
             top: 70px;
             right: 10px;
@@ -565,6 +565,155 @@
             }
         }
 
+    
+        
+        /* 按鈕容器 - 絕對定位在右上角 */
+        .update-item {
+            position: relative;  /* 讓子元素的 absolute 相對於此元素 */
+        }
+        
+        .edit-btn {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background: #41b4ff;
+            color: #0f0f23;
+            border: none;
+            padding: 5px 10px;
+            font-size: var(--tiny-font-size, 7px);
+            cursor: pointer;
+            z-index: 10;
+        }
+        
+        .edit-btn:hover {
+            background: #00ff41;
+        }
+        
+        .status-badge {
+            position: absolute;
+            top: 40px;  /* 在編輯按鈕下方 */
+            right: 10px;
+            display: inline-block;
+            padding: 3px 8px;
+            font-size: var(--tiny-font-size, 7px);
+            border: 1px solid;
+            margin-top: 0;
+            z-index: 10;
+        }
+        
+        /* 刪除按鈕容器 - 絕對定位在狀態標籤下方 */
+        .delete-btn-container {
+            position: absolute;
+            top: 70px;  /* 在狀態標籤下方 */
+            right: 10px;
+            margin-top: 0;
+            z-index: 10;
+        }
+        
+        .delete-btn-container .delete-btn {
+            background: #ff4141;
+            color: #fff;
+            border: 1px solid #ff4141;
+            font-size: var(--tiny-font-size, 7px);
+            padding: 2px 6px;
+            cursor: pointer;
+        }
+        
+        /* 書名過長處理 */
+        .manga-title {
+            max-width: calc(100% - 120px);  /* 預留右側按鈕空間 */
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            margin-bottom: 8px;
+        }
+        
+        /* 手機優化 */
+        @media (max-width: 768px) {
+            :root {
+                --base-font-size: 12px;
+                --small-font-size: 10px;
+                --tiny-font-size: 8px;
+            }
+            
+            body {
+                padding: 5px;
+            }
+            
+            .container {
+                padding: 5px;
+            }
+            
+            .update-item {
+                flex-direction: column;
+                padding: 8px;
+                position: relative;
+            }
+            
+            .manga-content {
+                flex-direction: column;
+            }
+            
+            .manga-details {
+                width: 100%;
+            }
+            
+            /* 手機上按鈕移到下方，水平排列 */
+            .edit-btn {
+                position: static;
+                margin: 5px 2px;
+            }
+            
+            .status-badge {
+                position: static;
+                margin: 5px 2px;
+            }
+            
+            .delete-btn-container {
+                position: static !important;
+                margin: 5px 2px !important;
+                text-align: center !important;
+            }
+            
+            /* 手機上按鈕容器 */
+            .update-item::after {
+                content: '';
+                display: table;
+                clear: both;
+            }
+            
+            .cover-image {
+                width: 80px;
+                height: 110px;
+            }
+            
+            .manga-title {
+                max-width: 100%;  /* 手機上不需要預留右側空間 */
+            }
+            
+            #comparison-${index} {
+                max-width: 100% !important;
+                margin-left: 0 !important;
+                margin-top: 10px;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            :root {
+                --base-font-size: 11px;
+                --small-font-size: 9px;
+                --tiny-font-size: 7px;
+            }
+            
+            .cover-image {
+                width: 60px;
+                height: 80px;
+            }
+            
+            .manga-title {
+                font-size: 12px;
+            }
+        }
     </style>
 </head>
 <body>
@@ -847,7 +996,7 @@
                                 
                                 <div class="manga-details" style="display:flex; flex-wrap:wrap; align-items:flex-start;">
                                     <div style="flex:1; min-width:0;">
-                                        <div class="manga-title" style="margin-bottom:8px;">
+                                        <div class="manga-title" style="margin-bottom:8px;" title="${update.name}">
                                             📚 ${update.name}
                                         </div>
                                     <div class="manga-info" id="author-info-${index}">
