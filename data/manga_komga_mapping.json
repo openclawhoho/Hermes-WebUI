@@ -5,9 +5,10 @@
     "komga_series_id": "0Q75YP4K33TG8",
     "matched_by": "天國大魔境",
     "match_ratio": 1.0,
-    "cover_url": "/api/manga/cover?seriesId=0Q75YP4K33TG8",
+    "cover_url": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx101942-yjslDpT6XcpK.jpg",
     "author": "未知",
-    "lastModified": "N/A"
+    "lastModified": "N/A",
+    "anilist_id": 101942
   },
   {
     "name_trad": "關於我轉生變成史萊姆這檔事",
