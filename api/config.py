@@ -29,7 +29,9 @@ REPO_ROOT = Path(__file__).parent.parent.resolve()
 
 # ── Network config (env-overridable) ─────────────────────────────────────────
 HOST = os.getenv("HERMES_WEBUI_HOST", "0.0.0.0")  # 允許遠端訪問
-PORT = int(os.getenv("HERMES_WEBUI_PORT", "8787"))
+# 优先使用 HERMES_WEBUI_PORT，其次使用 PORT（Render.com），最后使用默认值 8787
+_port_str = os.getenv("HERMES_WEBUI_PORT") or os.getenv("PORT", "8787")
+PORT = int(_port_str)
 
 # ── TLS/HTTPS config (optional, env-overridable) ────────────────────────────
 TLS_CERT = os.getenv("HERMES_WEBUI_TLS_CERT", "").strip() or None
