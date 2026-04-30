@@ -183,7 +183,7 @@
         }
         
         .manual-input input {
-            width: 100px;
+            width: 120px;
         }
         
         .manual-input label {
@@ -271,8 +271,8 @@
         
         .manga-cover {
             flex-shrink: 0;
-            width: 100px;
-            height: 140px;
+            width: 120px;
+            height: 160px;
             border: 2px solid #4ade80;
             overflow: hidden;
             background: rgba(0, 0, 0, 0.3);
@@ -499,9 +499,9 @@
         /* 手機優化 */
                         @media (max-width: 768px) {
             :root {
-                --base-font-size: 14px;
-                --small-font-size: 12px;
-                --tiny-font-size: 10px;
+                --base-font-size: 24px;
+                --small-font-size: 20px;
+                --tiny-font-size: 16px;
             }
             
             body {
@@ -561,8 +561,8 @@
             /* 封面區域 */
             .manga-cover {
                 flex-shrink: 0;
-                width: 100px;
-                height: 140px;
+                width: 120px;
+                height: 160px;
                 border-radius: 12px;
                 overflow: hidden;
                 box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
@@ -744,8 +744,10 @@
             
             /* 封面區域 */
             .manga-cover {
-                margin-right: 12px;
+                margin-right: 15px;
                 flex-shrink: 0;
+                width: 130px;
+                height: 180px;
             }
             
             .cover-image {
@@ -1067,10 +1069,13 @@
                 <select id="fontSizeSelect" onchange="changeFontSize()">
                     <option value="small">小 (10px)</option>
                     <option value="medium">中小 (12px)</option>
-                    <option value="default" selected>中 (14px)</option>
+                    <option value="default">中 (14px)</option>
                     <option value="large">大 (16px)</option>
                     <option value="xlarge">特大 (20px)</option>
-                    <option value="xxlarge">超大 (24px)</option>
+                    <option value="xxlarge" selected>超大 (24px)</option>
+                    <option value="xxxlarge">巨大 (28px)</option>
+                    <option value="mega">超巨 (32px)</option>
+                    <option value="giga">極限 (36px)</option>
                 </select>
             </div>
             
@@ -1171,6 +1176,11 @@
                     root.style.setProperty('--small-font-size', '10px');
                     root.style.setProperty('--tiny-font-size', '8px');
                     break;
+                case 'default':
+                    root.style.setProperty('--base-font-size', '14px');
+                    root.style.setProperty('--small-font-size', '12px');
+                    root.style.setProperty('--tiny-font-size', '10px');
+                    break;
                 case 'large':
                     root.style.setProperty('--base-font-size', '16px');
                     root.style.setProperty('--small-font-size', '14px');
@@ -1186,10 +1196,21 @@
                     root.style.setProperty('--small-font-size', '20px');
                     root.style.setProperty('--tiny-font-size', '16px');
                     break;
-                default: // 'default' = 14px
-                    root.style.setProperty('--base-font-size', '14px');
-                    root.style.setProperty('--small-font-size', '12px');
-                    root.style.setProperty('--tiny-font-size', '10px');
+                case 'xxxlarge':
+                    root.style.setProperty('--base-font-size', '28px');
+                    root.style.setProperty('--small-font-size', '24px');
+                    root.style.setProperty('--tiny-font-size', '20px');
+                    break;
+                case 'mega':
+                    root.style.setProperty('--base-font-size', '32px');
+                    root.style.setProperty('--small-font-size', '28px');
+                    root.style.setProperty('--tiny-font-size', '24px');
+                    break;
+                case 'giga':
+                    root.style.setProperty('--base-font-size', '36px');
+                    root.style.setProperty('--small-font-size', '32px');
+                    root.style.setProperty('--tiny-font-size', '28px');
+                    break;
             }
         }
             
@@ -1307,7 +1328,7 @@
                             <div class="manga-cover" id="${coverId}">
                                 <img src="${coverUrl}" alt="${update.name}" 
                                      onload="console.log('✅ 封面加載成功:', this.src);" 
-                                     onerror="console.error('❌ 封面加載失敗:', this.src); this.parentElement.classList.add('no-cover'); this.style.display='none'; this.nextElementSibling.style.display='block';" />
+                                     onerror="if(!this.dataset.retried) { this.dataset.retried = true; if('${update.anilist_id}') { this.src = 'https://anilist.co/img/dir/manga/${update.anilist_id}.jpg'; } else { this.parentElement.classList.add('no-cover'); this.style.display='none'; this.nextElementSibling.style.display='block'; } }" />
                                 <div class="no-cover-text" style="display:none;">📚<br>無封面</div>
                                 <div class="cover-edit" style="display:none; margin-top:5px; text-align:center;">
                                     <small style="color:#4ade80; font-size:var(--tiny-font-size, 7px);">封面URL:</small><br>
