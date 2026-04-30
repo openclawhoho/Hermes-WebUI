@@ -28,7 +28,8 @@
     "market_tw_date": "2025年？",
     "market_source": "用戶確認+維基百科",
     "market_jp_volumes": 23,
-    "market_chapters": 168
+    "market_chapters": 168,
+    "cover_url": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx86355.jpg"
   },
   {
     "num": "3",
@@ -56,7 +57,8 @@
     "title_jp": "陰の実力者になりたくて！",
     "new_volumes": 30,
     "new_chapters": 77,
-    "new_status": "RELEASING"
+    "new_status": "RELEASING",
+    "cover_url": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx106758.jpg"
   },
   {
     "num": "5",
@@ -86,7 +88,8 @@
     "new_chapters": 200,
     "new_status": "RELEASING",
     "market_jp_volumes": 25,
-    "market_chapters": 241
+    "market_chapters": 241,
+    "cover_url": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx110785.jpg"
   },
   {
     "num": "7",
@@ -135,7 +138,8 @@
     "market_tw_volumes": 29,
     "market_jp_volumes": 31,
     "market_tw_date": "2025-09-15",
-    "market_tw_isbn": "978-626-437-117-9"
+    "market_tw_isbn": "978-626-437-117-9",
+    "cover_url": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx87510.jpg"
   },
   {
     "num": "10",
@@ -149,7 +153,8 @@
     "title_jp": "図書館の大魔術師",
     "new_volumes": 18,
     "new_chapters": 48,
-    "new_status": "RELEASING"
+    "new_status": "RELEASING",
+    "cover_url": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx101131.jpg"
   },
   {
     "num": "11",
@@ -165,7 +170,8 @@
     "new_chapters": 70,
     "new_status": "RELEASING",
     "market_jp_volumes": 9,
-    "market_chapters": 72
+    "market_chapters": 72,
+    "cover_url": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx142103.jpg"
   },
   {
     "num": "12",
@@ -193,7 +199,8 @@
     "title_jp": "ちはやふる",
     "new_volumes": 63,
     "market_jp_volumes": 50,
-    "market_chapters": 248
+    "market_chapters": 248,
+    "cover_url": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx43245.jpg"
   },
   {
     "num": "14",
