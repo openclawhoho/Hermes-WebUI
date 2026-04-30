@@ -964,6 +964,7 @@ def handle_get(handler, parsed) -> bool:
     if parsed.path == "/api/manga/cover":
         try:
             import requests
+            import os
             from urllib.parse import parse_qs
             
             query = parse_qs(parsed.query)
@@ -976,8 +977,16 @@ def handle_get(handler, parsed) -> bool:
                 handler.wfile.write(json.dumps({'error': '缺少 seriesId 參數'}).encode('utf-8'))
                 return True
             
-            KOMGA_URL = "https://komga.hoooooooo.synology.me:448"
-            KOMGA_API_KEY = "ff9de96f228f4fe19b1734b139251d1a"
+            # 從環境變數讀取
+            KOMGA_URL = os.environ.get('KOMGA_URL', 'https://komga.hoooooooo.synology.me:448')
+            KOMGA_API_KEY = os.environ.get('KOMGA_API_KEY', '')
+            
+            if not KOMGA_API_KEY:
+                handler.send_response(500)
+                handler.send_header('Content-Type', 'application/json')
+                handler.end_headers()
+                handler.wfile.write(json.dumps({'error': 'KOMGA_API_KEY 未設定'}).encode('utf-8'))
+                return True
             
             cover_url = f"{KOMGA_URL}/api/v1/series/{series_id}/thumbnail"
             headers = {"X-API-Key": KOMGA_API_KEY}
