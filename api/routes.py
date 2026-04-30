@@ -504,11 +504,14 @@ def handle_get(handler, parsed) -> bool:
     """Handle all GET routes. Returns True if handled, False for 404."""
 
     if parsed.path in ("/", "/index.html"):
-        return t(
-            handler,
-            _INDEX_HTML_PATH.read_text(encoding="utf-8"),
-            content_type="text/html; charset=utf-8",
-        )
+        # Render.com 部署：根路徑直接顯示漫畫頁面
+        try:
+            from pathlib import Path
+            _base_dir = Path(__file__).resolve().parent.parent
+            manga_html = (_base_dir / 'static' / 'manga.html').read_text(encoding='utf-8')
+            return t(handler, manga_html, content_type="text/html; charset=utf-8")
+        except Exception as e:
+            return j(handler, {'error': str(e)}, status=500)
 
     if parsed.path == "/login":
         _settings = load_settings()
@@ -1009,9 +1012,9 @@ def handle_get(handler, parsed) -> bool:
     # 8bit 漫畫查詢頁面
     if parsed.path == "/manga" or parsed.path == "/manga.html":
         try:
-            import os
-            _base_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-            manga_html = open(os.path.join(_base_dir, 'static', 'manga.html'), 'r', encoding='utf-8').read()
+            from pathlib import Path
+            _base_dir = Path(__file__).resolve().parent.parent
+            manga_html = (_base_dir / 'static' / 'manga.html').read_text(encoding='utf-8')
             return t(handler, manga_html, content_type="text/html; charset=utf-8")
         except Exception as e:
             return j(handler, {'error': str(e)}, status=500)
