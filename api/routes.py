@@ -1009,6 +1009,7 @@ def handle_get(handler, parsed) -> bool:
     # 8bit 漫畫查詢頁面
     if parsed.path == "/manga" or parsed.path == "/manga.html":
         try:
+            import os
             _base_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
             manga_html = open(os.path.join(_base_dir, 'static', 'manga.html'), 'r', encoding='utf-8').read()
             return t(handler, manga_html, content_type="text/html; charset=utf-8")
