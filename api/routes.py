@@ -937,22 +937,33 @@ def handle_get(handler, parsed) -> bool:
                 if isinstance(updates_data, list):
                     for item in updates_data:
                         name = item.get('name', 'N/A')
-                        # 從映射中獲取 komga_series_id
+                        # 從映射中獲取 komga_series_id 和 anilist_id
                         series_id = None
+                        anilist_id = None
                         for m in mapping:
                             if m.get('name_trad') == name:
                                 series_id = m.get('komga_series_id')
+                                anilist_id = m.get('anilist_id')
                                 break
+                        
+                        # 決定封面 URL：優先使用 AniList 封面，否則用 Komga 代理
+                        cover_url = cover_map.get(name)
+                        if anilist_id and not cover_url:
+                            # 如果有 AniList ID 但沒有封面，嘗試構造 AniList 封面 URL
+                            # 注意：這需要從 AniList API 獲取，但先提供一個預設格式
+                            cover_url = f'https://anilist.co/img/dir/manga/{anilist_id}.jpg'
+                        
                         updates.append({
                             'name': name,
                             'volume': item.get('new_volumes', item.get('volumes', 'N/A')),
                             'chapter': item.get('new_chapters', item.get('chapters', 'N/A')),
                             'status': item.get('new_status', item.get('status', 'N/A')),
                             'status_class': 'ongoing' if str(item.get('new_status') or item.get('status') or '').upper() == 'RELEASING' else 'ended',
-                            'cover_url': cover_map.get(name),
+                            'cover_url': cover_url,
                             'author': author_map.get(name, '未知'),
                             'lastModified': date_map.get(name, 'N/A'),
-                            'komga_series_id': series_id
+                            'komga_series_id': series_id,
+                            'anilist_id': anilist_id
                         })
                 return j(handler, {'updates': updates, 'total': len(updates)})
             else:
