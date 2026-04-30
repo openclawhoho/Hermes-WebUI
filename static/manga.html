@@ -562,6 +562,10 @@
             
             .manga-title {
                 font-size: 12px;
+                max-width: 100%;  /* 手機上不需要預留右側空間 */
+                white-space: normal;  /* 允許換行 */
+                overflow: visible;
+                text-overflow: clip;
             }
         }
 
@@ -712,6 +716,10 @@
             
             .manga-title {
                 font-size: 12px;
+                max-width: 100%;  /* 手機上不需要預留右側空間 */
+                white-space: normal;  /* 允許換行 */
+                overflow: visible;
+                text-overflow: clip;
             }
         }
     </style>
