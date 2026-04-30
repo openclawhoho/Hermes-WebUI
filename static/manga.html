@@ -289,7 +289,7 @@
         
         .manga-cover.no-cover {
             color: #4ade80;
-            font-size: var(--tiny-font-size, 7px);
+            font-size: var(--small-font-size, 7px);
             text-align: center;
             padding: 10px;
             line-height: 1.5;
@@ -307,7 +307,7 @@
         
         .no-cover-text {
             color: #4ade80;
-            font-size: var(--tiny-font-size, 7px);
+            font-size: var(--small-font-size, 7px);
             text-align: center;
             padding: 10px;
             line-height: 1.5;
@@ -370,7 +370,7 @@
             color: #1a1a2e;
             border: none;
             padding: 5px 10px;
-            font-size: var(--tiny-font-size, 7px);
+            font-size: var(--small-font-size, 7px);
             cursor: pointer;
             z-index: 10;
         }
@@ -385,7 +385,7 @@
             right: 10px;
             display: inline-block;
             padding: 3px 8px;
-            font-size: var(--tiny-font-size, 7px);
+            font-size: var(--small-font-size, 7px);
             border: 1px solid;
             margin-top: 0;
             z-index: 10;
@@ -501,7 +501,7 @@
             :root {
                 --base-font-size: 24px;
                 --small-font-size: 20px;
-                --tiny-font-size: 16px;
+                --small-font-size: 16px;
             }
             
             body {
@@ -875,7 +875,7 @@
             :root {
                 --base-font-size: 12px;
                 --small-font-size: 10px;
-                --tiny-font-size: 8px;
+                --small-font-size: 8px;
             }
             
             .cover-image {
@@ -907,7 +907,7 @@
             color: #1a1a2e;
             border: none;
             padding: 5px 10px;
-            font-size: var(--tiny-font-size, 7px);
+            font-size: var(--small-font-size, 7px);
             cursor: pointer;
             z-index: 10;
         }
@@ -922,7 +922,7 @@
             right: 10px;
             display: inline-block;
             padding: 3px 8px;
-            font-size: var(--tiny-font-size, 7px);
+            font-size: var(--small-font-size, 7px);
             border: 1px solid;
             margin-top: 0;
             z-index: 10;
@@ -941,7 +941,7 @@
             background: #f87171;
             color: #fff;
             border: 1px solid #f87171;
-            font-size: var(--tiny-font-size, 7px);
+            font-size: var(--small-font-size, 7px);
             padding: 2px 6px;
             cursor: pointer;
         }
@@ -960,7 +960,7 @@
             :root {
                 --base-font-size: 12px;
                 --small-font-size: 10px;
-                --tiny-font-size: 8px;
+                --small-font-size: 8px;
             }
             
             body {
@@ -1036,7 +1036,7 @@
             :root {
                 --base-font-size: 12px;
                 --small-font-size: 10px;
-                --tiny-font-size: 8px;
+                --small-font-size: 8px;
             }
             
             .cover-image {
@@ -1169,52 +1169,51 @@
                 case 'small':
                     root.style.setProperty('--base-font-size', '10px');
                     root.style.setProperty('--small-font-size', '8px');
-                    root.style.setProperty('--tiny-font-size', '7px');
+                    root.style.setProperty('--small-font-size', '7px');
                     break;
                 case 'medium':
                     root.style.setProperty('--base-font-size', '12px');
                     root.style.setProperty('--small-font-size', '10px');
-                    root.style.setProperty('--tiny-font-size', '8px');
+                    root.style.setProperty('--small-font-size', '8px');
                     break;
                 case 'default':
                     root.style.setProperty('--base-font-size', '14px');
                     root.style.setProperty('--small-font-size', '12px');
-                    root.style.setProperty('--tiny-font-size', '10px');
+                    root.style.setProperty('--small-font-size', '10px');
                     break;
                 case 'large':
                     root.style.setProperty('--base-font-size', '16px');
                     root.style.setProperty('--small-font-size', '14px');
-                    root.style.setProperty('--tiny-font-size', '12px');
+                    root.style.setProperty('--small-font-size', '12px');
                     break;
                 case 'xlarge':
                     root.style.setProperty('--base-font-size', '20px');
                     root.style.setProperty('--small-font-size', '16px');
-                    root.style.setProperty('--tiny-font-size', '14px');
+                    root.style.setProperty('--small-font-size', '14px');
                     break;
                 case 'xxlarge':
                     root.style.setProperty('--base-font-size', '24px');
                     root.style.setProperty('--small-font-size', '20px');
-                    root.style.setProperty('--tiny-font-size', '16px');
+                    root.style.setProperty('--small-font-size', '16px');
                     break;
                 case 'xxxlarge':
                     root.style.setProperty('--base-font-size', '28px');
                     root.style.setProperty('--small-font-size', '24px');
-                    root.style.setProperty('--tiny-font-size', '20px');
+                    root.style.setProperty('--small-font-size', '20px');
                     break;
                 case 'mega':
                     root.style.setProperty('--base-font-size', '32px');
                     root.style.setProperty('--small-font-size', '28px');
-                    root.style.setProperty('--tiny-font-size', '24px');
+                    root.style.setProperty('--small-font-size', '24px');
                     break;
                 case 'giga':
                     root.style.setProperty('--base-font-size', '36px');
                     root.style.setProperty('--small-font-size', '32px');
-                    root.style.setProperty('--tiny-font-size', '28px');
+                    root.style.setProperty('--small-font-size', '28px');
                     break;
             }
-        }
+            localStorage.setItem(manga-font-size, size);
             
-            localStorage.setItem('manga-font-size', size);
         }
         
         // 載入保存的字體大小設定
@@ -1331,8 +1330,8 @@
                                      onerror="if(!this.dataset.retried) { this.dataset.retried = true; if('${update.anilist_id}') { this.src = 'https://anilist.co/img/dir/manga/${update.anilist_id}.jpg'; } else { this.parentElement.classList.add('no-cover'); this.style.display='none'; this.nextElementSibling.style.display='block'; } }" />
                                 <div class="no-cover-text" style="display:none;">📚<br>無封面</div>
                                 <div class="cover-edit" style="display:none; margin-top:5px; text-align:center;">
-                                    <small style="color:#4ade80; font-size:var(--tiny-font-size, 7px);">封面URL:</small><br>
-                                    <input type="text" id="edit-cover-${index}" value="${coverUrl}" placeholder="輸入封面圖片URL" style="width:90px; font-size:var(--tiny-font-size, 7px); background:#000; color:#4ade80; border:1px solid #4ade80;" />
+                                    <small style="color:#4ade80; font-size:var(--small-font-size, 7px);">封面URL:</small><br>
+                                    <input type="text" id="edit-cover-${index}" value="${coverUrl}" placeholder="輸入封面圖片URL" style="width:90px; font-size:var(--small-font-size, 7px); background:#000; color:#4ade80; border:1px solid #4ade80;" />
                                 </div>
                             </div>
                         `;
@@ -1341,8 +1340,8 @@
                             <div class="manga-cover no-cover" id="${coverId}">
                                 📚<br>無封面
                                 <div class="cover-edit" style="display:none; margin-top:5px; text-align:center;">
-                                    <small style="color:#4ade80; font-size:var(--tiny-font-size, 7px);">封面URL:</small><br>
-                                    <input type="text" id="edit-cover-${index}" value="" placeholder="輸入封面圖片URL" style="width:90px; font-size:var(--tiny-font-size, 7px); background:#000; color:#4ade80; border:1px solid #4ade80;" />
+                                    <small style="color:#4ade80; font-size:var(--small-font-size, 7px);">封面URL:</small><br>
+                                    <input type="text" id="edit-cover-${index}" value="" placeholder="輸入封面圖片URL" style="width:90px; font-size:var(--small-font-size, 7px); background:#000; color:#4ade80; border:1px solid #4ade80;" />
                                 </div>
                             </div>
                         `;
@@ -1412,21 +1411,21 @@
                                     
                                     <div class="manga-info" id="comparison-${index}" style="background:#1a1a1a; padding:8px; border:1px solid #333; border-radius:4px; margin-left:5px; max-width:250px; flex-shrink:0;">
                                         <div style="color:#fbbf24; font-size:var(--small-font-size, 10px); margin-bottom:4px;">📊 持有 vs 市場最新</div>
-                                        <div style="color:#4ade80; font-size:var(--tiny-font-size, 7px);">
+                                        <div style="color:#4ade80; font-size:var(--small-font-size, 7px);">
                                             📦 我手上的（Komga）：卷${update.new_volumes || update.volume || '?'} 話${update.new_chapters || update.chapter || '?'}
                                         </div>
                                         <div style="margin-top:6px; padding-top:6px; border-top:1px dashed #333;">
-                                            <div style="color:#34d399; font-size:var(--tiny-font-size, 7px); margin-bottom:2px;">🌐 市場最新資料：</div>
+                                            <div style="color:#34d399; font-size:var(--small-font-size, 7px); margin-bottom:2px;">🌐 市場最新資料：</div>
                                             ${update.market_jp_volumes ? `<div style="color:#888; font-size:6px;">・日本版：卷${update.market_jp_volumes}（${update.market_source}）</div>` : ''}
                                             ${update.market_tw_volumes ? `<div style="color:#888; font-size:6px;">・台灣版：卷${update.market_tw_volumes}（${update.market_source}）</div>` : ''}
                                             ${update.market_chapters ? `<div style="color:#888; font-size:6px;">・話數：話${update.market_chapters}（${update.market_source}）</div>` : ''}
                                         </div>
                                         ${update.market_jp_volumes && update.new_volumes && update.market_jp_volumes > update.new_volumes ? 
-                                            `<div style="color:#f87171; font-size:var(--tiny-font-size, 7px); margin-top:4px;">⚠️ 落後日本版 ${update.market_jp_volumes - update.new_volumes} 卷</div>` : 
+                                            `<div style="color:#f87171; font-size:var(--small-font-size, 7px); margin-top:4px;">⚠️ 落後日本版 ${update.market_jp_volumes - update.new_volumes} 卷</div>` : 
                                             (update.market_chapters && update.new_chapters && update.market_chapters > update.new_chapters ? 
-                                                `<div style="color:#f87171; font-size:var(--tiny-font-size, 7px); margin-top:4px;">⚠️ 落後 ${update.market_chapters - update.new_chapters} 話</div>` : 
-                                                '<div style="color:#4ade80; font-size:var(--tiny-font-size, 7px); margin-top:4px;">✅ 已是最新</div>')}
-                                        <div style="margin-top:4px; font-size:var(--tiny-font-size, 7px);">
+                                                `<div style="color:#f87171; font-size:var(--small-font-size, 7px); margin-top:4px;">⚠️ 落後 ${update.market_chapters - update.new_chapters} 話</div>` : 
+                                                '<div style="color:#4ade80; font-size:var(--small-font-size, 7px); margin-top:4px;">✅ 已是最新</div>')}
+                                        <div style="margin-top:4px; font-size:var(--small-font-size, 7px);">
                                             🔗 來源：
                                             ${update.anilist_id ? `<a href="https://anilist.co/manga/${update.anilist_id}" target="_blank" style="color:#60a5fa; margin-right:4px;">AniList</a>` : ''}
                                             ${update.mangadex_id ? `<a href="https://mangadex.org/title/${update.mangadex_id}" target="_blank" style="color:#60a5fa; margin-right:4px;">MangaDex</a>` : ''}
@@ -1440,7 +1439,7 @@
                                     </div>
                                     
                                     <div class="delete-btn-container">
-                                        <button class="delete-btn" onclick="deleteManga(${index})" style="background:#f87171; color:#fff; border:1px solid #f87171; font-size:var(--tiny-font-size, 7px); padding:2px 6px; cursor:pointer;">🗑️ 刪除</button>
+                                        <button class="delete-btn" onclick="deleteManga(${index})" style="background:#f87171; color:#fff; border:1px solid #f87171; font-size:var(--small-font-size, 7px); padding:2px 6px; cursor:pointer;">🗑️ 刪除</button>
                                     </div>
                                 </div>
                             </div>
