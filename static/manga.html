@@ -497,12 +497,326 @@
         }
         
         /* 手機優化 */
-        @media (max-width: 768px) {
+                        @media (max-width: 768px) {
             :root {
-                --base-font-size: 12px;
-                --small-font-size: 10px;
-                --tiny-font-size: 8px;
+                --base-font-size: 13px;
+                --small-font-size: 11px;
+                --tiny-font-size: 9px;
             }
+            
+            body {
+                padding: 8px;
+                background: #0a0a1a;
+                font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            }
+            
+            .container {
+                padding: 8px;
+                max-width: 100%;
+            }
+            
+            /* 獲獎級卡片設計 */
+            .update-item {
+                flex-direction: column;
+                padding: 0;
+                margin-bottom: 16px;
+                background: linear-gradient(145deg, #1a1a2a 0%, #252540 100%);
+                border: 1px solid rgba(0, 255, 65, 0.2);
+                border-radius: 16px;
+                box-shadow: 
+                    0 4px 24px rgba(0, 0, 0, 0.4),
+                    0 0 0 1px rgba(0, 255, 65, 0.1) inset;
+                position: relative;
+                overflow: hidden;
+                transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1),
+                            box-shadow 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            }
+            
+            .update-item:active {
+                transform: scale(0.98);
+                box-shadow: 
+                    0 2px 12px rgba(0, 0, 0, 0.6),
+                    0 0 0 1px rgba(0, 255, 65, 0.2) inset;
+            }
+            
+            /* 卡片頂部裝飾條 */
+            .update-item::before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                height: 3px;
+                background: linear-gradient(90deg, #00ff41, #41b4ff, #ffff41);
+                opacity: 0.8;
+            }
+            
+            /* 內容區域 */
+            .manga-content {
+                flex-direction: row;
+                padding: 16px;
+                gap: 14px;
+            }
+            
+            /* 封面區域 */
+            .manga-cover {
+                flex-shrink: 0;
+                width: 100px;
+                height: 140px;
+                border-radius: 12px;
+                overflow: hidden;
+                box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+                position: relative;
+            }
+            
+            .cover-image {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                border-radius: 12px;
+            }
+            
+            /* 文字內容區域 */
+            .manga-details {
+                flex: 1;
+                min-width: 0;
+                display: flex;
+                flex-direction: column;
+                gap: 6px;
+            }
+            
+            /* 書名樣式 - 現代化 */
+            .manga-title {
+                max-width: 100%;
+                white-space: normal;
+                overflow: visible;
+                text-overflow: clip;
+                font-size: 16px;
+                font-weight: 700;
+                color: #00ff41;
+                line-height: 1.3;
+                margin-bottom: 4px;
+                text-shadow: 0 0 10px rgba(0, 255, 65, 0.3);
+            }
+            
+            /* 資訊文字 */
+            .manga-info {
+                font-size: 12px;
+                color: #aaa;
+                line-height: 1.4;
+            }
+            
+            .manga-info span {
+                color: #fff;
+                font-weight: 500;
+            }
+            
+            /* 狀態標籤 - 現代化 */
+            .status-badge {
+                position: static;
+                display: inline-block;
+                padding: 4px 10px;
+                font-size: 10px;
+                font-weight: 600;
+                border-radius: 20px;
+                text-transform: uppercase;
+                letter-spacing: 0.5px;
+                width: fit-content;
+                margin-top: 4px;
+            }
+            
+            .status-ongoing {
+                background: rgba(65, 180, 255, 0.2);
+                color: #41b4ff;
+                border: 1px solid rgba(65, 180, 255, 0.5);
+            }
+            
+            .status-completed {
+                background: rgba(255, 65, 65, 0.2);
+                color: #ff4141;
+                border: 1px solid rgba(255, 65, 65, 0.5);
+            }
+            
+            /* 持有 vs 市場最新 - 底層區域 */
+            #comparison-${index} {
+                max-width: 100% !important;
+                margin: 0 !important;
+                margin-left: 0 !important;
+                background: rgba(0, 0, 0, 0.3) !important;
+                border: none !important;
+                border-top: 1px solid rgba(255, 255, 255, 0.1) !important;
+                border-radius: 0 0 16px 16px !important;
+                padding: 14px 16px !important;
+                backdrop-filter: blur(10px);
+            }
+            
+            #comparison-${index} > div:first-child {
+                font-size: 12px !important;
+                font-weight: 600 !important;
+                margin-bottom: 8px !important;
+            }
+            
+            /* 操作按鈕 - 底層固定區 */
+            .action-buttons {
+                position: static !important;
+                flex-direction: row !important;
+                justify-content: center !important;
+                gap: 8px !important;
+                padding: 12px 16px !important;
+                margin: 0 !important;
+                background: rgba(0, 0, 0, 0.2);
+                border-top: 1px solid rgba(255, 255, 255, 0.1);
+                border-radius: 0 0 16px 16px;
+            }
+            
+            .edit-btn {
+                position: static !important;
+                background: linear-gradient(135deg, #41b4ff, #0080ff) !important;
+                color: #fff !important;
+                border: none !important;
+                padding: 8px 16px !important;
+                border-radius: 8px !important;
+                font-size: 11px !important;
+                font-weight: 600 !important;
+                box-shadow: 0 2px 8px rgba(65, 180, 255, 0.3) !important;
+                transition: all 0.2s !important;
+            }
+            
+            .edit-btn:active {
+                transform: scale(0.95) !important;
+                box-shadow: 0 1px 4px rgba(65, 180, 255, 0.5) !important;
+            }
+            
+            .delete-btn-container {
+                position: static !important;
+            }
+            
+            .delete-btn {
+                background: linear-gradient(135deg, #ff4141, #cc0000) !important;
+                color: #fff !important;
+                border: none !important;
+                padding: 8px 16px !important;
+                border-radius: 8px !important;
+                font-size: 11px !important;
+                font-weight: 600 !important;
+                box-shadow: 0 2px 8px rgba(255, 65, 65, 0.3) !important;
+                transition: all 0.2s !important;
+            }
+            
+            .delete-btn:active {
+                transform: scale(0.95) !important;
+                box-shadow: 0 1px 4px rgba(255, 65, 65, 0.5) !important;
+            }
+        }
+            
+            body {
+                padding: 5px;
+                background: #0a0a1a;  /* 更深色的背景 */
+            }
+            
+            .container {
+                padding: 5px;
+            }
+            
+            /* 卡片式設計 */
+            .update-item {
+                flex-direction: row;
+                padding: 12px;
+                margin-bottom: 10px;
+                background: #1a1a2a;  /* 卡片背景 */
+                border: 1px solid #333;
+                border-radius: 8px;
+                box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+                position: relative;
+                transition: transform 0.2s;
+            }
+            
+            .update-item:active {
+                transform: scale(0.98);  /* 點擊反饋 */
+            }
+            
+            /* 封面和內容並排 */
+            .manga-content {
+                flex-direction: row;
+                flex-wrap: wrap;
+                width: 100%;
+            }
+            
+            /* 封面區域 */
+            .manga-cover {
+                margin-right: 12px;
+                flex-shrink: 0;
+            }
+            
+            .cover-image {
+                width: 90px;  /* 稍大一些 */
+                height: 120px;
+                border-radius: 4px;
+                box-shadow: 0 2px 4px rgba(0,0,0,0.5);
+            }
+            
+            /* 文字內容區域 */
+            .manga-details {
+                flex: 1;
+                min-width: 0;
+                display: flex;
+                flex-direction: column;
+            }
+            
+            /* 書名樣式 */
+            .manga-title {
+                max-width: 100%;
+                white-space: normal;
+                overflow: visible;
+                text-overflow: clip;
+                font-size: 14px;
+                font-weight: bold;
+                margin-bottom: 6px;
+                color: #00ff41;
+            }
+            
+            /* 資訊文字 */
+            .manga-info {
+                font-size: 11px;
+                margin-bottom: 4px;
+            }
+            
+            /* 持有 vs 市場最新 - 移到封面右邊 */
+            #comparison-${index} {
+                max-width: 100% !important;
+                margin-left: 0 !important;
+                margin-top: 8px;
+                background: #252540 !important;  /* 深色背景 */
+                border: 1px solid #444 !important;
+                border-radius: 6px !important;
+                padding: 8px !important;
+            }
+            
+            /* 按鈕容器 - 移到最下方 */
+            .action-buttons {
+                position: static;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: center;
+                margin-top: 12px;
+                padding-top: 10px;
+                border-top: 1px solid #333;
+                width: 100%;
+                gap: 8px;
+            }
+            
+            .action-buttons .edit-btn,
+            .action-buttons .status-badge,
+            .action-buttons .delete-btn-container {
+                margin: 2px;
+            }
+            
+            /* 狀態標籤 */
+            .status-badge {
+                font-size: 10px;
+                padding: 3px 8px;
+            }
+        }
             
             body {
                 padding: 5px;
