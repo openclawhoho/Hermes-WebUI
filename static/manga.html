@@ -518,7 +518,12 @@
             }
             
             .manga-content {
-                flex-direction: column;
+                flex-direction: row;  /* 手機上封面和內容並排 */
+                flex-wrap: wrap;
+            }
+            
+            .manga-content > div:first-child {
+                margin-right: 10px;  /* 封面右側間距 */
             }
             
             .manga-details {
@@ -545,6 +550,8 @@
                 max-width: 100% !important;
                 margin-left: 0 !important;
                 margin-top: 10px;
+                flex: 1;  /* 佔據剩餘空間 */
+                min-width: 200px;  /* 最小寬度 */
             }
         }
         
@@ -655,7 +662,12 @@
             }
             
             .manga-content {
-                flex-direction: column;
+                flex-direction: row;  /* 手機上封面和內容並排 */
+                flex-wrap: wrap;
+            }
+            
+            .manga-content > div:first-child {
+                margin-right: 10px;  /* 封面右側間距 */
             }
             
             .manga-details {
@@ -699,6 +711,8 @@
                 max-width: 100% !important;
                 margin-left: 0 !important;
                 margin-top: 10px;
+                flex: 1;  /* 佔據剩餘空間 */
+                min-width: 200px;  /* 最小寬度 */
             }
         }
         
