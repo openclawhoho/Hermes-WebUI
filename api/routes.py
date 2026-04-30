@@ -945,7 +945,7 @@ def handle_get(handler, parsed) -> bool:
                             'volume': item.get('new_volumes', item.get('volumes', 'N/A')),
                             'chapter': item.get('new_chapters', item.get('chapters', 'N/A')),
                             'status': item.get('new_status', item.get('status', 'N/A')),
-                            'status_class': 'ongoing' if item.get('status') == 'RELEASING' else 'ended',
+                            'status_class': 'ongoing' if str(item.get('new_status') or item.get('status') or '').upper() == 'RELEASING' else 'ended',
                             'cover_url': cover_map.get(name),
                             'author': author_map.get(name, '未知'),
                             'lastModified': date_map.get(name, 'N/A'),
