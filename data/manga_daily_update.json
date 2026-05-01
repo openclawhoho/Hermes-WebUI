@@ -6,13 +6,13 @@
     "chapters": 81,
     "volumes": 15,
     "status": "連載中",
-    "updated": "2026-04-30",
+    "updated": "2026-05-01",
     "title_en": "Heavenly Delusion",
     "title_jp": "天国大魔境",
     "new_volumes": 15,
     "new_chapters": 81,
     "new_status": "RELEASING",
-    "cover_url": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx101942-yjslDpT6XcpK.jpg"
+    "cover_url": "/static/covers/unknown_0Q75YP4K33TG8.jpg"
   },
   {
     "num": "2",
@@ -21,7 +21,7 @@
     "chapters": 168,
     "volumes": 23,
     "status": "已完結",
-    "updated": "2026-04-30",
+    "updated": "2026-05-01",
     "title_en": "That Time I Got Reincarnated as a Slime",
     "title_jp": "転生したらスライムだった件",
     "market_tw_volumes": 20,
@@ -29,7 +29,8 @@
     "market_source": "用戶確認+維基百科",
     "market_jp_volumes": 23,
     "market_chapters": 168,
-    "cover_url": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx86355.jpg"
+    "cover_url": "/static/covers/unknown_0K2H6PD291ZYJ.jpg",
+    "komga_series_id": "0K2E9FY5X1ZDF"
   },
   {
     "num": "3",
@@ -43,7 +44,9 @@
     "title_jp": "",
     "new_volumes": 21,
     "new_chapters": 109,
-    "new_status": "RELEASING"
+    "new_status": "RELEASING",
+    "komga_series_id": "0K2E9G6T51SP2",
+    "cover_url": "/static/covers/unknown_0K2E9G6T51SP2.jpg"
   },
   {
     "num": "4",
@@ -52,13 +55,14 @@
     "chapters": 77,
     "volumes": 30,
     "status": "連載中",
-    "updated": "2026-04-30",
+    "updated": "2026-05-01",
     "title_en": "The Eminence in Shadow",
     "title_jp": "陰の実力者になりたくて！",
     "new_volumes": 30,
     "new_chapters": 77,
     "new_status": "RELEASING",
-    "cover_url": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx106758.jpg"
+    "cover_url": "/static/covers/unknown_0K2E9GDP51Q9K.jpg",
+    "komga_series_id": "0K2E9GDP51Q9K"
   },
   {
     "num": "5",
@@ -72,7 +76,9 @@
     "title_jp": "",
     "new_volumes": 13,
     "new_chapters": 95,
-    "new_status": "RELEASING"
+    "new_status": "RELEASING",
+    "komga_series_id": "0K2E9GGDS1PPC",
+    "cover_url": "/static/covers/unknown_0K2E9GGDS1PPC.jpg"
   },
   {
     "num": "6",
@@ -81,7 +87,7 @@
     "chapters": 200,
     "volumes": 30,
     "status": "已完結",
-    "updated": "2026-04-30",
+    "updated": "2026-05-01",
     "title_en": "2.5 Dimensional Seduction",
     "title_jp": "2.5次元の誘惑",
     "new_volumes": 30,
@@ -89,7 +95,8 @@
     "new_status": "RELEASING",
     "market_jp_volumes": 25,
     "market_chapters": 241,
-    "cover_url": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx110785.jpg"
+    "cover_url": "/static/covers/unknown_0K2E9GHV11KWD.jpg",
+    "komga_series_id": "0K2E9GHV11KWD"
   },
   {
     "num": "7",
@@ -103,7 +110,8 @@
     "title_jp": "",
     "new_volumes": 12,
     "new_chapters": 65,
-    "new_status": "RELEASING"
+    "new_status": "RELEASING",
+    "cover_url": "/static/covers/unknown_0K2E9GMT51WCA.jpg"
   },
   {
     "num": "8",
@@ -117,7 +125,9 @@
     "title_jp": "",
     "new_volumes": 30,
     "new_chapters": 115,
-    "new_status": "RELEASING"
+    "new_status": "RELEASING",
+    "komga_series_id": "0K2E9GPA51TAW",
+    "cover_url": "/static/covers/unknown_0K2E9GPA51TAW.jpg"
   },
   {
     "num": "9",
@@ -126,7 +136,7 @@
     "chapters": 405,
     "volumes": 39,
     "status": "連載中",
-    "updated": "2026-04-30",
+    "updated": "2026-05-01",
     "title_en": "Sleepy Princess in the Demon Castle",
     "title_jp": "魔王城でおやすみ",
     "new_volumes": 24,
@@ -139,7 +149,8 @@
     "market_jp_volumes": 31,
     "market_tw_date": "2025-09-15",
     "market_tw_isbn": "978-626-437-117-9",
-    "cover_url": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx87510.jpg"
+    "cover_url": "/static/covers/unknown_0K2E9GPGN1PYS.jpg",
+    "komga_series_id": "0K2E9GPGN1PYS"
   },
   {
     "num": "10",
@@ -148,13 +159,14 @@
     "chapters": 48,
     "volumes": 18,
     "status": "連載中",
-    "updated": "2026-04-30",
+    "updated": "2026-05-01",
     "title_en": "Magus of the Library",
     "title_jp": "図書館の大魔術師",
     "new_volumes": 18,
     "new_chapters": 48,
     "new_status": "RELEASING",
-    "cover_url": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx101131.jpg"
+    "cover_url": "/static/covers/unknown_0K2E9GRAS1HF2.jpg",
+    "komga_series_id": "0K2E9GRAS1HF2"
   },
   {
     "num": "11",
@@ -163,7 +175,7 @@
     "chapters": 70,
     "volumes": 10,
     "status": "已完結",
-    "updated": "2026-04-30",
+    "updated": "2026-05-01",
     "title_en": null,
     "title_jp": "異世界不倫Ⅱ～導かれし人妻たちと不器用転生勇者～",
     "new_volumes": 10,
@@ -171,7 +183,8 @@
     "new_status": "RELEASING",
     "market_jp_volumes": 9,
     "market_chapters": 72,
-    "cover_url": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx142103.jpg"
+    "cover_url": "/static/covers/unknown_0K2E9H5FX1ZSJ.jpg",
+    "komga_series_id": "0K2E9H5FX1ZSJ"
   },
   {
     "num": "12",
@@ -185,7 +198,9 @@
     "title_jp": "",
     "new_volumes": 7,
     "new_chapters": 42,
-    "new_status": "RELEASING"
+    "new_status": "RELEASING",
+    "komga_series_id": "0K2E9J7651Q7D",
+    "cover_url": "/static/covers/unknown_0K2E9J7651Q7D.jpg"
   },
   {
     "num": "13",
@@ -194,13 +209,14 @@
     "chapters": 248,
     "volumes": 63,
     "status": "已完結",
-    "updated": "2026-04-30",
+    "updated": "2026-05-01",
     "title_en": "Chihayafuru",
     "title_jp": "ちはやふる",
     "new_volumes": 63,
     "market_jp_volumes": 50,
     "market_chapters": 248,
-    "cover_url": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx43245.jpg"
+    "cover_url": "/static/covers/unknown_0K2E9J7C11XW1.jpg",
+    "komga_series_id": "0K2E9J7C11XW1"
   },
   {
     "num": "14",
@@ -214,7 +230,9 @@
     "title_jp": "",
     "new_volumes": 1,
     "new_chapters": 6,
-    "new_status": "RELEASING"
+    "new_status": "RELEASING",
+    "komga_series_id": "0K2E9JANH1NB7",
+    "cover_url": "/static/covers/unknown_0K2E9JANH1NB7.jpg"
   },
   {
     "num": "15",
@@ -228,7 +246,9 @@
     "title_jp": "",
     "new_volumes": 18,
     "new_chapters": 56,
-    "new_status": "RELEASING"
+    "new_status": "RELEASING",
+    "komga_series_id": "0K2E9JANS1Q0B",
+    "cover_url": "/static/covers/unknown_0K2E9JANS1Q0B.jpg"
   },
   {
     "num": "16",
@@ -242,7 +262,9 @@
     "title_jp": "",
     "new_volumes": 27,
     "new_chapters": 115,
-    "new_status": "RELEASING"
+    "new_status": "RELEASING",
+    "komga_series_id": "0K2E9JE1S1JCG",
+    "cover_url": "/static/covers/unknown_0K2E9JE1S1JCG.jpg"
   },
   {
     "num": "17",
@@ -256,7 +278,8 @@
     "title_jp": "",
     "new_volumes": 20,
     "new_chapters": 231,
-    "new_status": "RELEASING"
+    "new_status": "RELEASING",
+    "cover_url": "/static/covers/unknown_0P66T20DZBCD4.jpg"
   },
   {
     "num": "18",
@@ -269,7 +292,8 @@
     "title_en": "",
     "title_jp": "",
     "new_chapters": 192,
-    "new_volumes": 16
+    "new_volumes": 16,
+    "cover_url": "/static/covers/unknown_0P4XS29BKB8T3.jpg"
   },
   {
     "num": "19",
@@ -283,7 +307,9 @@
     "title_jp": "",
     "new_chapters": 106,
     "new_volumes": 16,
-    "new_status": "RELEASING"
+    "new_status": "RELEASING",
+    "komga_series_id": "0K8WPY8T2SYXA",
+    "cover_url": "/static/covers/unknown_0P3P7PK4KB3GX.jpg"
   },
   {
     "num": "20",
@@ -297,7 +323,8 @@
     "title_jp": "",
     "new_volumes": 15,
     "new_chapters": 117,
-    "new_status": "RELEASING"
+    "new_status": "RELEASING",
+    "cover_url": "/static/covers/unknown_0P8FACEEVBB5N.jpg"
   },
   {
     "num": "21",
@@ -310,7 +337,8 @@
     "title_en": "",
     "title_jp": "",
     "new_chapters": 147,
-    "new_volumes": 24
+    "new_volumes": 24,
+    "cover_url": "/static/covers/unknown_0P9BPRXPVB6MW.jpg"
   },
   {
     "num": "22",
@@ -323,7 +351,8 @@
     "title_en": "",
     "title_jp": "",
     "new_chapters": 109,
-    "new_volumes": 73
+    "new_volumes": 73,
+    "cover_url": "/static/covers/unknown_0P9BPRXPBB52Z.jpg"
   },
   {
     "num": "23",
@@ -336,7 +365,8 @@
     "title_en": "",
     "title_jp": "",
     "new_chapters": 99,
-    "new_volumes": 16
+    "new_volumes": 16,
+    "cover_url": "/static/covers/unknown_0P9YXBAMQB7HK.jpg"
   },
   {
     "num": "24",
@@ -349,7 +379,8 @@
     "title_en": "",
     "title_jp": "",
     "new_chapters": 90,
-    "new_volumes": 13
+    "new_volumes": 13,
+    "cover_url": "/static/covers/unknown_0PCWM7R7X046B.jpg"
   },
   {
     "num": "25",
@@ -363,7 +394,8 @@
     "title_jp": "",
     "new_chapters": 42,
     "new_volumes": 6,
-    "new_status": "RELEASING"
+    "new_status": "RELEASING",
+    "cover_url": "/static/covers/unknown_0PDZAA8QN0B0Q.jpg"
   },
   {
     "num": "26",
@@ -377,7 +409,9 @@
     "title_jp": "",
     "new_chapters": 83,
     "new_volumes": 12,
-    "new_status": "RELEASING"
+    "new_status": "RELEASING",
+    "komga_series_id": "0K2H6PC3X1XR7",
+    "cover_url": "/static/covers/unknown_0PPJ3J5806PHW.jpg"
   },
   {
     "num": "27",
@@ -391,7 +425,8 @@
     "title_jp": "",
     "new_chapters": 207,
     "new_volumes": 17,
-    "new_status": "RELEASING"
+    "new_status": "RELEASING",
+    "cover_url": "/static/covers/unknown_0PQM02SD06V0F.jpg"
   },
   {
     "num": "28",
@@ -404,7 +439,8 @@
     "title_en": "",
     "title_jp": "",
     "new_chapters": 132,
-    "new_volumes": 54
+    "new_volumes": 54,
+    "cover_url": "/static/covers/unknown_0PR8BAFX46TY5.jpg"
   },
   {
     "num": "29",
@@ -417,7 +453,8 @@
     "title_en": "",
     "title_jp": "",
     "new_chapters": 185,
-    "new_volumes": 71
+    "new_volumes": 71,
+    "cover_url": "/static/covers/unknown_0PS31FJ3G6RK3.jpg"
   },
   {
     "num": "30",
@@ -430,7 +467,8 @@
     "title_en": "",
     "title_jp": "",
     "new_chapters": 45,
-    "new_volumes": 86
+    "new_volumes": 86,
+    "cover_url": "/static/covers/unknown_0PS7A2AQR6T5P.jpg"
   },
   {
     "num": "31",
@@ -443,7 +481,8 @@
     "title_en": "",
     "title_jp": "",
     "new_chapters": 58,
-    "new_volumes": 37
+    "new_volumes": 37,
+    "cover_url": "/static/covers/unknown_0Q6PG9AAB3G23.jpg"
   },
   {
     "num": "32",
@@ -456,7 +495,8 @@
     "title_en": "",
     "title_jp": "",
     "new_chapters": 326,
-    "new_volumes": 90
+    "new_volumes": 90,
+    "cover_url": "/static/covers/unknown_0PWTMBAHZV9BK.jpg"
   },
   {
     "num": "33",
@@ -469,7 +509,8 @@
     "title_en": "",
     "title_jp": "",
     "new_chapters": 50,
-    "new_volumes": 10
+    "new_volumes": 10,
+    "cover_url": "/static/covers/unknown_0PY1GY9WQ3K38.jpg"
   },
   {
     "num": "34",
@@ -482,7 +523,8 @@
     "title_en": "",
     "title_jp": "",
     "new_chapters": 236,
-    "new_volumes": 37
+    "new_volumes": 37,
+    "cover_url": "/static/covers/unknown_0PPFH62446XQ1.jpg"
   },
   {
     "num": "35",
@@ -495,7 +537,8 @@
     "title_en": "",
     "title_jp": "",
     "new_chapters": 115,
-    "new_volumes": 77
+    "new_volumes": 77,
+    "cover_url": "/static/covers/unknown_0PK3CECD06VPT.jpg"
   },
   {
     "num": "36",
@@ -508,7 +551,8 @@
     "title_en": "",
     "title_jp": "",
     "new_chapters": 52,
-    "new_volumes": 24
+    "new_volumes": 24,
+    "cover_url": "/static/covers/unknown_0PCH3GSZD0139.jpg"
   },
   {
     "num": "37",
@@ -521,7 +565,8 @@
     "title_en": "",
     "title_jp": "",
     "new_chapters": 110,
-    "new_volumes": 50
+    "new_volumes": 50,
+    "cover_url": "/static/covers/unknown_0P9BPRXNZBB59.jpg"
   },
   {
     "num": "38",
@@ -534,7 +579,8 @@
     "title_en": "",
     "title_jp": "",
     "new_chapters": 1178,
-    "new_volumes": 1180
+    "new_volumes": 1180,
+    "cover_url": "/static/covers/unknown_0PPMVP1NC6K23.jpg"
   },
   {
     "num": "39",
@@ -547,7 +593,8 @@
     "title_en": "",
     "title_jp": "",
     "new_chapters": 168,
-    "new_volumes": 57
+    "new_volumes": 57,
+    "cover_url": "/static/covers/unknown_0PPSTQT1R6X5X.jpg"
   },
   {
     "num": "40",
@@ -560,7 +607,8 @@
     "title_en": "",
     "title_jp": "",
     "new_chapters": 45,
-    "new_volumes": 40
+    "new_volumes": 40,
+    "cover_url": "/static/covers/unknown_0PQM02SCC6YB0.jpg"
   },
   {
     "num": "41",
@@ -573,7 +621,8 @@
     "title_en": "",
     "title_jp": "",
     "new_chapters": 252,
-    "new_volumes": 21
+    "new_volumes": 21,
+    "cover_url": "/static/covers/unknown_0PRDRNJEG6R6N.jpg"
   },
   {
     "num": "42",
@@ -586,7 +635,8 @@
     "title_en": "",
     "title_jp": "",
     "new_chapters": 415,
-    "new_volumes": 58
+    "new_volumes": 58,
+    "cover_url": "/static/covers/unknown_0PS4AHP5C6X4Q.jpg"
   },
   {
     "num": "43",
@@ -599,7 +649,8 @@
     "title_en": "",
     "title_jp": "",
     "new_chapters": 233,
-    "new_volumes": 77
+    "new_volumes": 77,
+    "cover_url": "/static/covers/unknown_0PYGY1MBF3K0B.jpg"
   },
   {
     "num": "44",
@@ -612,7 +663,8 @@
     "title_en": "",
     "title_jp": "",
     "new_chapters": 81,
-    "new_volumes": 16
+    "new_volumes": 16,
+    "cover_url": "/static/covers/unknown_0PYF78VEQ3J1C.jpg"
   },
   {
     "num": "45",
@@ -625,7 +677,8 @@
     "title_en": "",
     "title_jp": "",
     "new_chapters": 88,
-    "new_volumes": 88
+    "new_volumes": 88,
+    "cover_url": "/static/covers/unknown_0Q1F4FW6B3NNT.jpg"
   },
   {
     "num": "46",
@@ -638,7 +691,8 @@
     "title_en": "",
     "title_jp": "",
     "new_chapters": 48,
-    "new_volumes": 4
+    "new_volumes": 4,
+    "cover_url": "/static/covers/unknown_0Q1PVMSXK3JW6.jpg"
   },
   {
     "num": "47",
@@ -651,7 +705,8 @@
     "title_en": "",
     "title_jp": "",
     "new_chapters": 108,
-    "new_volumes": 9
+    "new_volumes": 9,
+    "cover_url": "/static/covers/unknown_0Q1PVNCW73P68.jpg"
   },
   {
     "num": "48",
@@ -664,7 +719,8 @@
     "title_en": "",
     "title_jp": "",
     "new_chapters": 38,
-    "new_volumes": 38
+    "new_volumes": 38,
+    "cover_url": "/static/covers/unknown_0Q56K4JBQ3RK7.jpg"
   },
   {
     "num": "49",
@@ -677,7 +733,8 @@
     "title_en": "",
     "title_jp": "",
     "new_chapters": 110,
-    "new_volumes": 105
+    "new_volumes": 105,
+    "cover_url": "/static/covers/unknown_0Q36DX6W73R8V.jpg"
   },
   {
     "num": "50",
@@ -690,7 +747,8 @@
     "title_en": "",
     "title_jp": "",
     "new_chapters": 88,
-    "new_volumes": 22
+    "new_volumes": 22,
+    "cover_url": "/static/covers/unknown_0PZ49ZXZB3S64.jpg"
   },
   {
     "num": "51",
@@ -703,7 +761,8 @@
     "title_en": "",
     "title_jp": "",
     "new_chapters": 175,
-    "new_volumes": 35
+    "new_volumes": 35,
+    "cover_url": "/static/covers/unknown_0PZ1EVPYZ3RFH.jpg"
   },
   {
     "num": "52",
@@ -716,7 +775,8 @@
     "title_en": "",
     "title_jp": "",
     "new_chapters": 254,
-    "new_volumes": 65
+    "new_volumes": 65,
+    "cover_url": "/static/covers/unknown_0PYSB5ABZ3Z8B.jpg"
   },
   {
     "num": "53",
@@ -729,7 +789,8 @@
     "title_en": "",
     "title_jp": "",
     "new_chapters": 320,
-    "new_volumes": 42
+    "new_volumes": 42,
+    "cover_url": "/static/covers/unknown_0PYPH63VK3YN1.jpg"
   },
   {
     "num": "54",
@@ -742,7 +803,8 @@
     "title_en": "",
     "title_jp": "",
     "new_chapters": 57,
-    "new_volumes": 11
+    "new_volumes": 11,
+    "cover_url": "/static/covers/unknown_0PYNY7T5K3PST.jpg"
   },
   {
     "num": "55",
@@ -755,7 +817,8 @@
     "title_en": "",
     "title_jp": "",
     "new_chapters": 51,
-    "new_volumes": 9
+    "new_volumes": 9,
+    "cover_url": "/static/covers/unknown_0PYNY7T5K3PSF.jpg"
   },
   {
     "num": "56",
@@ -768,7 +831,8 @@
     "title_en": "",
     "title_jp": "",
     "new_chapters": 210,
-    "new_volumes": 36
+    "new_volumes": 36,
+    "cover_url": "/static/covers/unknown_0PYB7J6P33V39.jpg"
   },
   {
     "num": "57",
@@ -781,7 +845,8 @@
     "title_en": "",
     "title_jp": "",
     "new_chapters": 865,
-    "new_volumes": 100
+    "new_volumes": 100,
+    "cover_url": "/static/covers/unknown_0PY0VGVNZ3XPE.jpg"
   },
   {
     "num": "58",
@@ -794,7 +859,8 @@
     "title_en": "",
     "title_jp": "",
     "new_chapters": 60,
-    "new_volumes": 12
+    "new_volumes": 12,
+    "cover_url": "/static/covers/unknown_0PXGS9H2VV8EW.jpg"
   },
   {
     "num": "59",
@@ -807,7 +873,8 @@
     "title_en": "",
     "title_jp": "",
     "new_chapters": 59,
-    "new_volumes": 12
+    "new_volumes": 12,
+    "cover_url": "/static/covers/unknown_0PXEP9V0KVECN.jpg"
   },
   {
     "num": "60",
@@ -820,7 +887,8 @@
     "title_en": "",
     "title_jp": "",
     "new_chapters": 155,
-    "new_volumes": 23
+    "new_volumes": 23,
+    "cover_url": "/static/covers/unknown_0PWEAMHQQVBX4.jpg"
   },
   {
     "num": "61",
@@ -833,7 +901,8 @@
     "title_en": "",
     "title_jp": "",
     "new_chapters": 825,
-    "new_volumes": 19
+    "new_volumes": 19,
+    "cover_url": "/static/covers/unknown_0Q75YP4RB3PJT.jpg"
   },
   {
     "num": "62",
@@ -846,7 +915,8 @@
     "title_en": "",
     "title_jp": "",
     "new_chapters": 24,
-    "new_volumes": 2
+    "new_volumes": 2,
+    "cover_url": "/static/covers/unknown_0Q75YP4JK3ZN3.jpg"
   },
   {
     "num": "63",
@@ -859,7 +929,8 @@
     "title_en": "",
     "title_jp": "",
     "new_chapters": 120,
-    "new_volumes": 10
+    "new_volumes": 10,
+    "cover_url": "/static/covers/unknown_0Q75YP4HV3NHE.jpg"
   },
   {
     "num": "64",
@@ -872,7 +943,8 @@
     "title_en": "",
     "title_jp": "",
     "new_chapters": 1178,
-    "new_volumes": 1180
+    "new_volumes": 1180,
+    "cover_url": "/static/covers/unknown_0PPMVP1NC6K23.jpg"
   },
   {
     "num": "66",
@@ -885,7 +957,8 @@
     "title_en": "",
     "title_jp": "",
     "new_chapters": 192,
-    "new_volumes": 16
+    "new_volumes": 16,
+    "cover_url": "/static/covers/unknown_0Q6RAMGAF3TPY.jpg"
   },
   {
     "num": "67",
@@ -898,7 +971,8 @@
     "title_en": "",
     "title_jp": "",
     "new_chapters": 55,
-    "new_volumes": 55
+    "new_volumes": 55,
+    "cover_url": "/static/covers/unknown_0PSJ9F3GW6Q5Z.jpg"
   },
   {
     "num": "68",
@@ -911,7 +985,9 @@
     "title_en": "",
     "title_jp": "",
     "new_chapters": 120,
-    "new_volumes": 10
+    "new_volumes": 10,
+    "komga_series_id": "0K2H3A8EN1RAA",
+    "cover_url": "/static/covers/unknown_0Q6PG94P33J9Q.jpg"
   },
   {
     "num": "69",
@@ -924,7 +1000,8 @@
     "title_en": "",
     "title_jp": "",
     "new_chapters": 58,
-    "new_volumes": 37
+    "new_volumes": 37,
+    "cover_url": "/static/covers/unknown_0Q6PG9AAB3G23.jpg"
   },
   {
     "num": "70",
@@ -935,7 +1012,9 @@
     "status": "未找到",
     "updated": "",
     "title_en": "",
-    "title_jp": ""
+    "title_jp": "",
+    "komga_series_id": "0K2H3A8EN1RAA",
+    "cover_url": "/static/covers/unknown_0Q6PG94P33J9Q.jpg"
   },
   {
     "num": "71",
@@ -948,7 +1027,8 @@
     "title_en": "",
     "title_jp": "",
     "new_chapters": 215,
-    "new_volumes": 36
+    "new_volumes": 36,
+    "cover_url": "/static/covers/unknown_0Q6ES35XB3YH2.jpg"
   },
   {
     "num": "72",
@@ -961,7 +1041,8 @@
     "title_en": "",
     "title_jp": "",
     "new_chapters": 48,
-    "new_volumes": 4
+    "new_volumes": 4,
+    "cover_url": "/static/covers/unknown_0Q1PVMSXK3JW6.jpg"
   },
   {
     "num": "73",
@@ -974,7 +1055,8 @@
     "title_en": "",
     "title_jp": "",
     "new_chapters": 204,
-    "new_volumes": 17
+    "new_volumes": 17,
+    "cover_url": "/static/covers/unknown_0Q4SVQCG33H18.jpg"
   },
   {
     "num": "74",
@@ -987,7 +1069,8 @@
     "title_en": "",
     "title_jp": "",
     "new_chapters": 148,
-    "new_volumes": 94
+    "new_volumes": 94,
+    "cover_url": "/static/covers/unknown_0Q4FZ3AYF3PAR.jpg"
   },
   {
     "num": "75",
@@ -1000,7 +1083,8 @@
     "title_en": "",
     "title_jp": "",
     "new_chapters": 36,
-    "new_volumes": 3
+    "new_volumes": 3,
+    "cover_url": "/static/covers/unknown_0Q3Q7K8DZ3PAQ.jpg"
   },
   {
     "num": "76",
@@ -1013,7 +1097,8 @@
     "title_en": "",
     "title_jp": "",
     "new_chapters": 156,
-    "new_volumes": 13
+    "new_volumes": 13,
+    "cover_url": "/static/covers/unknown_0Q3GFY7R33TNR.jpg"
   },
   {
     "num": "77",
@@ -1026,7 +1111,8 @@
     "title_en": "",
     "title_jp": "",
     "new_chapters": 228,
-    "new_volumes": 19
+    "new_volumes": 19,
+    "cover_url": "/static/covers/unknown_0Q3GFY7QZ3XV4.jpg"
   },
   {
     "num": "78",
@@ -1039,7 +1125,8 @@
     "title_en": "",
     "title_jp": "",
     "new_chapters": 324,
-    "new_volumes": 27
+    "new_volumes": 27,
+    "cover_url": "/static/covers/unknown_0Q3GFY7QV3S4C.jpg"
   },
   {
     "num": "79",
@@ -1052,7 +1139,8 @@
     "title_en": "",
     "title_jp": "",
     "new_chapters": 204,
-    "new_volumes": 17
+    "new_volumes": 17,
+    "cover_url": "/static/covers/unknown_0Q3GFY7QV3S3T.jpg"
   },
   {
     "num": "80",
@@ -1065,7 +1153,8 @@
     "title_en": "",
     "title_jp": "",
     "new_chapters": 160,
-    "new_volumes": 23
+    "new_volumes": 23,
+    "cover_url": "/static/covers/unknown_0Q3GFY7QQ3VM3.jpg"
   },
   {
     "num": "81",
@@ -1078,7 +1167,8 @@
     "title_en": "",
     "title_jp": "",
     "new_chapters": 55,
-    "new_volumes": 8
+    "new_volumes": 8,
+    "cover_url": "/static/covers/unknown_0Q3GFY7QK3HK4.jpg"
   },
   {
     "num": "82",
@@ -1091,7 +1181,8 @@
     "title_en": "",
     "title_jp": "",
     "new_chapters": 24,
-    "new_volumes": 2
+    "new_volumes": 2,
+    "cover_url": "/static/covers/unknown_0Q3GFY5Q33J9R.jpg"
   },
   {
     "num": "83",
@@ -1104,7 +1195,8 @@
     "title_en": "",
     "title_jp": "",
     "new_chapters": 30,
-    "new_volumes": 15
+    "new_volumes": 15,
+    "cover_url": "/static/covers/unknown_0Q379NHMF3S0E.jpg"
   },
   {
     "num": "84",
@@ -1117,7 +1209,8 @@
     "title_en": "",
     "title_jp": "",
     "new_chapters": 60,
-    "new_volumes": 5
+    "new_volumes": 5,
+    "cover_url": "/static/covers/unknown_0Q379NHJZ3SS0.jpg"
   },
   {
     "num": "85",
@@ -1130,7 +1223,8 @@
     "title_en": "",
     "title_jp": "",
     "new_chapters": 156,
-    "new_volumes": 13
+    "new_volumes": 13,
+    "cover_url": "/static/covers/unknown_0Q379NFMZ3VAA.jpg"
   },
   {
     "num": "86",
@@ -1143,7 +1237,8 @@
     "title_en": "",
     "title_jp": "",
     "new_chapters": 261,
-    "new_volumes": 42
+    "new_volumes": 42,
+    "cover_url": "/static/covers/unknown_0P9EF4VGQB3ND.jpg"
   },
   {
     "num": "87",
@@ -1156,7 +1251,8 @@
     "title_en": "",
     "title_jp": "",
     "new_chapters": 132,
-    "new_volumes": 11
+    "new_volumes": 11,
+    "cover_url": "/static/covers/unknown_0Q1W0F3HF3NHB.jpg"
   },
   {
     "num": "88",
@@ -1169,7 +1265,8 @@
     "title_en": "",
     "title_jp": "",
     "new_chapters": 12,
-    "new_volumes": 1
+    "new_volumes": 1,
+    "cover_url": "/static/covers/unknown_0Q1W0F3HF3NH8.jpg"
   },
   {
     "num": "89",
@@ -1182,7 +1279,8 @@
     "title_en": "",
     "title_jp": "",
     "new_chapters": 12,
-    "new_volumes": 1
+    "new_volumes": 1,
+    "cover_url": "/static/covers/unknown_0Q1F4FY733NRD.jpg"
   },
   {
     "num": "90",
@@ -1195,7 +1293,8 @@
     "title_en": "",
     "title_jp": "",
     "new_chapters": 164,
-    "new_volumes": 25
+    "new_volumes": 25,
+    "cover_url": "/static/covers/unknown_0PQMAJJD06R4Z.jpg"
   },
   {
     "num": "91",
@@ -1208,7 +1307,8 @@
     "title_en": "",
     "title_jp": "",
     "new_chapters": 199,
-    "new_volumes": 57
+    "new_volumes": 57,
+    "cover_url": "/static/covers/unknown_0PPSTQTH86QH5.jpg"
   },
   {
     "num": "92",
@@ -1221,7 +1321,8 @@
     "title_en": "",
     "title_jp": "",
     "new_chapters": 94,
-    "new_volumes": 94
+    "new_volumes": 94,
+    "cover_url": "/static/covers/unknown_0PPG1D0GW6V1W.jpg"
   },
   {
     "num": "93",
@@ -1234,7 +1335,9 @@
     "title_en": "",
     "title_jp": "",
     "new_chapters": 456,
-    "new_volumes": 38
+    "new_volumes": 38,
+    "komga_series_id": "0K2H6P8591PF7",
+    "cover_url": "/static/covers/unknown_0K2H6P8591PF7.jpg"
   },
   {
     "num": "94",
@@ -1247,7 +1350,8 @@
     "title_en": "",
     "title_jp": "",
     "new_chapters": 12,
-    "new_volumes": 1
+    "new_volumes": 1,
+    "cover_url": "/static/covers/unknown_0Q1T2RB5V3SMN.jpg"
   },
   {
     "num": "95",
@@ -1260,7 +1364,8 @@
     "title_en": "",
     "title_jp": "",
     "new_chapters": 12,
-    "new_volumes": 1
+    "new_volumes": 1,
+    "cover_url": "/static/covers/unknown_0Q1T2RB5V3SMJ.jpg"
   },
   {
     "num": "96",
@@ -1273,7 +1378,8 @@
     "title_en": "",
     "title_jp": "",
     "new_chapters": 70,
-    "new_volumes": 13
+    "new_volumes": 13,
+    "cover_url": "/static/covers/unknown_0PYPH63WF3RJ8.jpg"
   },
   {
     "num": "97",
@@ -1286,7 +1392,8 @@
     "title_en": "",
     "title_jp": "",
     "new_chapters": 24,
-    "new_volumes": 2
+    "new_volumes": 2,
+    "cover_url": "/static/covers/unknown_0Q1PVNCXK3W2X.jpg"
   },
   {
     "num": "98",
@@ -1299,7 +1406,9 @@
     "title_en": "",
     "title_jp": "",
     "new_chapters": 216,
-    "new_volumes": 18
+    "new_volumes": 18,
+    "komga_series_id": "0K2H3ABD51YBQ",
+    "cover_url": "/static/covers/unknown_0Q1PVNCWF3Z0C.jpg"
   },
   {
     "num": "99",
@@ -1312,7 +1421,8 @@
     "title_en": "",
     "title_jp": "",
     "new_chapters": 261,
-    "new_volumes": 42
+    "new_volumes": 42,
+    "cover_url": "/static/covers/unknown_0PQMAJJ986XW8.jpg"
   },
   {
     "num": "100",
@@ -1325,7 +1435,8 @@
     "title_en": "",
     "title_jp": "",
     "new_chapters": 315,
-    "new_volumes": 44
+    "new_volumes": 44,
+    "cover_url": "/static/covers/unknown_0P85DH4YVB3PD.jpg"
   },
   {
     "num": "101",
@@ -1338,7 +1449,8 @@
     "title_en": "",
     "title_jp": "",
     "new_chapters": 176,
-    "new_volumes": 43
+    "new_volumes": 43,
+    "cover_url": "/static/covers/unknown_0Q0KTR4YZ3K9Z.jpg"
   },
   {
     "num": "102",
@@ -1351,7 +1463,8 @@
     "title_en": "",
     "title_jp": "",
     "new_chapters": 168,
-    "new_volumes": 14
+    "new_volumes": 14,
+    "cover_url": "/static/covers/unknown_0PZC642CK3TNF.jpg"
   },
   {
     "num": "103",
@@ -1364,7 +1477,9 @@
     "title_en": "",
     "title_jp": "",
     "new_chapters": 115,
-    "new_volumes": 38
+    "new_volumes": 38,
+    "komga_series_id": "0K47MDMHN1J0Z",
+    "cover_url": "/static/covers/unknown_0PZ1EVQ1F3YY6.jpg"
   },
   {
     "num": "104",
@@ -1377,7 +1492,8 @@
     "title_en": "",
     "title_jp": "",
     "new_chapters": 60,
-    "new_volumes": 9
+    "new_volumes": 9,
+    "cover_url": "/static/covers/unknown_0PZ1EVP0Z3WSF.jpg"
   },
   {
     "num": "105",
@@ -1390,7 +1506,8 @@
     "title_en": "",
     "title_jp": "",
     "new_chapters": 96,
-    "new_volumes": 8
+    "new_volumes": 8,
+    "cover_url": "/static/covers/unknown_0PYSB5ABZ3Z81.jpg"
   },
   {
     "num": "106",
@@ -1403,7 +1520,8 @@
     "title_en": "",
     "title_jp": "",
     "new_chapters": 540,
-    "new_volumes": 45
+    "new_volumes": 45,
+    "cover_url": "/static/covers/unknown_0PYSB5ABB3JNK.jpg"
   },
   {
     "num": "107",
@@ -1416,7 +1534,8 @@
     "title_en": "",
     "title_jp": "",
     "new_chapters": 72,
-    "new_volumes": 6
+    "new_volumes": 6,
+    "cover_url": "/static/covers/unknown_0PYSB5ABB3JNC.jpg"
   },
   {
     "num": "108",
@@ -1429,7 +1548,8 @@
     "title_en": "",
     "title_jp": "",
     "new_chapters": 24,
-    "new_volumes": 2
+    "new_volumes": 2,
+    "cover_url": "/static/covers/unknown_0PYSB54WZ3GMA.jpg"
   },
   {
     "num": "109",
@@ -1442,7 +1562,8 @@
     "title_en": "",
     "title_jp": "",
     "new_chapters": 40,
-    "new_volumes": 8
+    "new_volumes": 8,
+    "cover_url": "/static/covers/unknown_0PYPH63WB3QKX.jpg"
   },
   {
     "num": "110",
@@ -1455,7 +1576,8 @@
     "title_en": "",
     "title_jp": "",
     "new_chapters": 24,
-    "new_volumes": 2
+    "new_volumes": 2,
+    "cover_url": "/static/covers/unknown_0PYP0ZYPF3XR7.jpg"
   },
   {
     "num": "111",
@@ -1468,7 +1590,8 @@
     "title_en": "",
     "title_jp": "",
     "new_chapters": 924,
-    "new_volumes": 77
+    "new_volumes": 77,
+    "cover_url": "/static/covers/unknown_0PYP0ZYNZ3ZAS.jpg"
   },
   {
     "num": "112",
@@ -1481,7 +1604,8 @@
     "title_en": "",
     "title_jp": "",
     "new_chapters": 270,
-    "new_volumes": 56
+    "new_volumes": 56,
+    "cover_url": "/static/covers/unknown_0PYNY7T5Q3XBD.jpg"
   },
   {
     "num": "113",
@@ -1494,7 +1618,8 @@
     "title_en": "",
     "title_jp": "",
     "new_chapters": 113,
-    "new_volumes": 30
+    "new_volumes": 30,
+    "cover_url": "/static/covers/unknown_0PYNY7T5B3K56.jpg"
   },
   {
     "num": "114",
@@ -1507,7 +1632,8 @@
     "title_en": "",
     "title_jp": "",
     "new_chapters": 15,
-    "new_volumes": 17
+    "new_volumes": 17,
+    "cover_url": "/static/covers/unknown_0PYNT794Q3YG1.jpg"
   },
   {
     "num": "115",
@@ -1520,7 +1646,8 @@
     "title_en": "",
     "title_jp": "",
     "new_chapters": 48,
-    "new_volumes": 4
+    "new_volumes": 4,
+    "cover_url": "/static/covers/unknown_0PYNNC3RQ3QR5.jpg"
   },
   {
     "num": "116",
@@ -1533,7 +1660,8 @@
     "title_en": "",
     "title_jp": "",
     "new_chapters": 36,
-    "new_volumes": 3
+    "new_volumes": 3,
+    "cover_url": "/static/covers/unknown_0PYNNC3RQ3QR1.jpg"
   },
   {
     "num": "117",
@@ -1546,7 +1674,8 @@
     "title_en": "",
     "title_jp": "",
     "new_chapters": 48,
-    "new_volumes": 4
+    "new_volumes": 4,
+    "cover_url": "/static/covers/unknown_0PYNNC3RQ3QQW.jpg"
   },
   {
     "num": "118",
@@ -1559,7 +1688,8 @@
     "title_en": "",
     "title_jp": "",
     "new_chapters": 492,
-    "new_volumes": 41
+    "new_volumes": 41,
+    "cover_url": "/static/covers/unknown_0PYNNC3RF3SGS.jpg"
   },
   {
     "num": "119",
@@ -1572,7 +1702,8 @@
     "title_en": "",
     "title_jp": "",
     "new_chapters": 36,
-    "new_volumes": 3
+    "new_volumes": 3,
+    "cover_url": "/static/covers/unknown_0PYNNC3RB3SY6.jpg"
   },
   {
     "num": "120",
@@ -1585,7 +1716,8 @@
     "title_en": "",
     "title_jp": "",
     "new_chapters": 12,
-    "new_volumes": 1
+    "new_volumes": 1,
+    "cover_url": "/static/covers/unknown_0PYNNC3RB3SY4.jpg"
   },
   {
     "num": "121",
@@ -1598,7 +1730,8 @@
     "title_en": "",
     "title_jp": "",
     "new_chapters": 12,
-    "new_volumes": 1
+    "new_volumes": 1,
+    "cover_url": "/static/covers/unknown_0PYJE4B2F3JAZ.jpg"
   },
   {
     "num": "122",
@@ -1611,7 +1744,8 @@
     "title_en": "",
     "title_jp": "",
     "new_chapters": 24,
-    "new_volumes": 2
+    "new_volumes": 2,
+    "cover_url": "/static/covers/unknown_0PYHR3MRB3HVJ.jpg"
   },
   {
     "num": "123",
@@ -1624,7 +1758,8 @@
     "title_en": "",
     "title_jp": "",
     "new_chapters": 36,
-    "new_volumes": 3
+    "new_volumes": 3,
+    "cover_url": "/static/covers/unknown_0PYHR3JTV3RRZ.jpg"
   },
   {
     "num": "124",
@@ -1637,7 +1772,8 @@
     "title_en": "",
     "title_jp": "",
     "new_chapters": 12,
-    "new_volumes": 1
+    "new_volumes": 1,
+    "cover_url": "/static/covers/unknown_0PYHPWHX33WFB.jpg"
   },
   {
     "num": "125",
@@ -1650,7 +1786,8 @@
     "title_en": "",
     "title_jp": "",
     "new_chapters": 36,
-    "new_volumes": 3
+    "new_volumes": 3,
+    "cover_url": "/static/covers/unknown_0PYHPKD1Q3SMS.jpg"
   },
   {
     "num": "126",
@@ -1663,7 +1800,8 @@
     "title_en": "",
     "title_jp": "",
     "new_chapters": 10,
-    "new_volumes": 2
+    "new_volumes": 2,
+    "cover_url": "/static/covers/unknown_0PYHPKD1K3T64.jpg"
   },
   {
     "num": "127",
@@ -1676,7 +1814,8 @@
     "title_en": "",
     "title_jp": "",
     "new_chapters": 228,
-    "new_volumes": 19
+    "new_volumes": 19,
+    "cover_url": "/static/covers/unknown_0PYHPKD1F3SEY.jpg"
   },
   {
     "num": "128",
@@ -1689,7 +1828,8 @@
     "title_en": "",
     "title_jp": "",
     "new_chapters": 12,
-    "new_volumes": 1
+    "new_volumes": 1,
+    "cover_url": "/static/covers/unknown_0PYHPKD1F3SEW.jpg"
   },
   {
     "num": "129",
@@ -1702,7 +1842,8 @@
     "title_en": "",
     "title_jp": "",
     "new_chapters": 264,
-    "new_volumes": 22
+    "new_volumes": 22,
+    "cover_url": "/static/covers/unknown_0PYHPKD173ZY8.jpg"
   },
   {
     "num": "130",
@@ -1715,7 +1856,8 @@
     "title_en": "",
     "title_jp": "",
     "new_chapters": 12,
-    "new_volumes": 1
+    "new_volumes": 1,
+    "cover_url": "/static/covers/unknown_0PYHPKD173ZY6.jpg"
   },
   {
     "num": "131",
@@ -1728,7 +1870,8 @@
     "title_en": "",
     "title_jp": "",
     "new_chapters": 176,
-    "new_volumes": 35
+    "new_volumes": 35,
+    "cover_url": "/static/covers/unknown_0PRD5HAQ86JCG.jpg"
   },
   {
     "num": "132",
@@ -1741,7 +1884,8 @@
     "title_en": "",
     "title_jp": "",
     "new_chapters": 150,
-    "new_volumes": 30
+    "new_volumes": 30,
+    "cover_url": "/static/covers/unknown_0PAQMEBBQB587.jpg"
   },
   {
     "num": "133",
@@ -1754,7 +1898,8 @@
     "title_en": "",
     "title_jp": "",
     "new_chapters": 44,
-    "new_volumes": 8
+    "new_volumes": 8,
+    "cover_url": "/static/covers/unknown_0P4SJV297BCDY.jpg"
   },
   {
     "num": "134",
@@ -1767,7 +1912,9 @@
     "title_en": "",
     "title_jp": "",
     "new_chapters": 12,
-    "new_volumes": 1
+    "new_volumes": 1,
+    "komga_series_id": "0K2TF5Y691T0Q",
+    "cover_url": "/static/covers/unknown_0K2TF5Y691T0Q.jpg"
   },
   {
     "num": "135",
@@ -1780,7 +1927,8 @@
     "title_en": "",
     "title_jp": "",
     "new_chapters": 12,
-    "new_volumes": 1
+    "new_volumes": 1,
+    "cover_url": "/static/covers/unknown_0PYGY1M9K3SF4.jpg"
   },
   {
     "num": "136",
@@ -1793,7 +1941,8 @@
     "title_en": "",
     "title_jp": "",
     "new_chapters": 108,
-    "new_volumes": 9
+    "new_volumes": 9,
+    "cover_url": "/static/covers/unknown_0PYF78VEQ3J11.jpg"
   },
   {
     "num": "137",
@@ -1806,7 +1955,8 @@
     "title_en": "",
     "title_jp": "",
     "new_chapters": 12,
-    "new_volumes": 1
+    "new_volumes": 1,
+    "cover_url": "/static/covers/unknown_0PYF78GXV3YFX.jpg"
   },
   {
     "num": "138",
@@ -1819,7 +1969,8 @@
     "title_en": "",
     "title_jp": "",
     "new_chapters": 12,
-    "new_volumes": 1
+    "new_volumes": 1,
+    "cover_url": "/static/covers/unknown_0PYF78GXV3YFV.jpg"
   },
   {
     "num": "139",
@@ -1832,7 +1983,8 @@
     "title_en": "",
     "title_jp": "",
     "new_chapters": 179,
-    "new_volumes": 36
+    "new_volumes": 36,
+    "cover_url": "/static/covers/unknown_0PPFH62EW6JXF.jpg"
   },
   {
     "num": "140",
@@ -1845,7 +1997,8 @@
     "title_en": "",
     "title_jp": "",
     "new_chapters": 48,
-    "new_volumes": 4
+    "new_volumes": 4,
+    "cover_url": "/static/covers/unknown_0PYD4RBDV3Q37.jpg"
   },
   {
     "num": "141",
@@ -1858,7 +2011,8 @@
     "title_en": "",
     "title_jp": "",
     "new_chapters": 1260,
-    "new_volumes": 105
+    "new_volumes": 105,
+    "cover_url": "/static/covers/unknown_0PQK5QNNM6VHK.jpg"
   },
   {
     "num": "142",
@@ -1871,7 +2025,8 @@
     "title_en": "",
     "title_jp": "",
     "new_chapters": 240,
-    "new_volumes": 20
+    "new_volumes": 20,
+    "cover_url": "/static/covers/unknown_0PYCYD0K33H9A.jpg"
   },
   {
     "num": "143",
@@ -1884,7 +2039,8 @@
     "title_en": "",
     "title_jp": "",
     "new_chapters": 144,
-    "new_volumes": 12
+    "new_volumes": 12,
+    "cover_url": "/static/covers/unknown_0PYCYD0JV3XKX.jpg"
   },
   {
     "num": "144",
@@ -1897,7 +2053,8 @@
     "title_en": "",
     "title_jp": "",
     "new_chapters": 48,
-    "new_volumes": 4
+    "new_volumes": 4,
+    "cover_url": "/static/covers/unknown_0PYCYD0JQ3PET.jpg"
   },
   {
     "num": "145",
@@ -1910,7 +2067,8 @@
     "title_en": "",
     "title_jp": "",
     "new_chapters": 84,
-    "new_volumes": 7
+    "new_volumes": 7,
+    "cover_url": "/static/covers/unknown_0PYCYD0JK3KZ8.jpg"
   },
   {
     "num": "146",
@@ -1923,7 +2081,8 @@
     "title_en": "",
     "title_jp": "",
     "new_chapters": 48,
-    "new_volumes": 4
+    "new_volumes": 4,
+    "cover_url": "/static/covers/unknown_0PYCYD0JK3KZ3.jpg"
   },
   {
     "num": "147",
@@ -1936,7 +2095,8 @@
     "title_en": "",
     "title_jp": "",
     "new_chapters": 12,
-    "new_volumes": 1
+    "new_volumes": 1,
+    "cover_url": "/static/covers/unknown_0PYCYD0JK3KZ0.jpg"
   },
   {
     "num": "148",
@@ -1949,7 +2109,8 @@
     "title_en": "",
     "title_jp": "",
     "new_chapters": 36,
-    "new_volumes": 3
+    "new_volumes": 3,
+    "cover_url": "/static/covers/unknown_0PYCYCVV73ZTM.jpg"
   },
   {
     "num": "149",
@@ -1962,7 +2123,9 @@
     "title_en": "",
     "title_jp": "",
     "new_chapters": 155,
-    "new_volumes": 29
+    "new_volumes": 29,
+    "komga_series_id": "0P2HXRSVZB6B1",
+    "cover_url": "/static/covers/unknown_0P2HXRSVZB6B1.jpg"
   },
   {
     "num": "150",
@@ -1975,7 +2138,8 @@
     "title_en": "",
     "title_jp": "",
     "new_chapters": 60,
-    "new_volumes": 5
+    "new_volumes": 5,
+    "cover_url": "/static/covers/unknown_0PY4XA9FF3K0K.jpg"
   },
   {
     "num": "151",
@@ -1988,7 +2152,8 @@
     "title_en": "",
     "title_jp": "",
     "new_chapters": 156,
-    "new_volumes": 13
+    "new_volumes": 13,
+    "cover_url": "/static/covers/unknown_0PY4XA9FB3Z18.jpg"
   },
   {
     "num": "152",
@@ -2001,7 +2166,8 @@
     "title_en": "",
     "title_jp": "",
     "new_chapters": 72,
-    "new_volumes": 6
+    "new_volumes": 6,
+    "cover_url": "/static/covers/unknown_0PY4XA9FB3Z11.jpg"
   },
   {
     "num": "153",
@@ -2014,7 +2180,8 @@
     "title_en": "",
     "title_jp": "",
     "new_chapters": 48,
-    "new_volumes": 4
+    "new_volumes": 4,
+    "cover_url": "/static/covers/unknown_0PY4XA9F73KH5.jpg"
   },
   {
     "num": "154",
@@ -2027,7 +2194,8 @@
     "title_en": "",
     "title_jp": "",
     "new_chapters": 192,
-    "new_volumes": 16
+    "new_volumes": 16,
+    "cover_url": "/static/covers/unknown_0PY4XA9F73KGM.jpg"
   },
   {
     "num": "155",
@@ -2040,7 +2208,8 @@
     "title_en": "",
     "title_jp": "",
     "new_chapters": 60,
-    "new_volumes": 5
+    "new_volumes": 5,
+    "cover_url": "/static/covers/unknown_0PY4XA9F33R10.jpg"
   },
   {
     "num": "156",
@@ -2053,7 +2222,8 @@
     "title_en": "",
     "title_jp": "",
     "new_chapters": 72,
-    "new_volumes": 6
+    "new_volumes": 6,
+    "cover_url": "/static/covers/unknown_0PY4XA9F33R0S.jpg"
   },
   {
     "num": "157",
@@ -2066,7 +2236,8 @@
     "title_en": "",
     "title_jp": "",
     "new_chapters": 48,
-    "new_volumes": 4
+    "new_volumes": 4,
+    "cover_url": "/static/covers/unknown_0PY4XA9F33R0M.jpg"
   },
   {
     "num": "158",
@@ -2079,7 +2250,8 @@
     "title_en": "",
     "title_jp": "",
     "new_chapters": 48,
-    "new_volumes": 4
+    "new_volumes": 4,
+    "cover_url": "/static/covers/unknown_0PY4XA9F33R0F.jpg"
   },
   {
     "num": "159",
@@ -2092,7 +2264,8 @@
     "title_en": "",
     "title_jp": "",
     "new_chapters": 96,
-    "new_volumes": 8
+    "new_volumes": 8,
+    "cover_url": "/static/covers/unknown_0PY4XA9EZ3ZZN.jpg"
   },
   {
     "num": "160",
@@ -2105,7 +2278,8 @@
     "title_en": "",
     "title_jp": "",
     "new_chapters": 156,
-    "new_volumes": 13
+    "new_volumes": 13,
+    "cover_url": "/static/covers/unknown_0PY4XA9EV3G0R.jpg"
   },
   {
     "num": "161",
@@ -2118,7 +2292,8 @@
     "title_en": "",
     "title_jp": "",
     "new_chapters": 204,
-    "new_volumes": 17
+    "new_volumes": 17,
+    "cover_url": "/static/covers/unknown_0PY4XA9EQ3Z1S.jpg"
   },
   {
     "num": "162",
@@ -2131,7 +2306,8 @@
     "title_en": "",
     "title_jp": "",
     "new_chapters": 48,
-    "new_volumes": 4
+    "new_volumes": 4,
+    "cover_url": "/static/covers/unknown_0PY4XA9EQ3Z1K.jpg"
   },
   {
     "num": "163",
@@ -2144,7 +2320,8 @@
     "title_en": "",
     "title_jp": "",
     "new_chapters": 36,
-    "new_volumes": 3
+    "new_volumes": 3,
+    "cover_url": "/static/covers/unknown_0PY4XA9EQ3Z1F.jpg"
   },
   {
     "num": "164",
@@ -2157,7 +2334,8 @@
     "title_en": "",
     "title_jp": "",
     "new_chapters": 120,
-    "new_volumes": 10
+    "new_volumes": 10,
+    "cover_url": "/static/covers/unknown_0PY4XA9EK3M0D.jpg"
   },
   {
     "num": "165",
@@ -2170,7 +2348,8 @@
     "title_en": "",
     "title_jp": "",
     "new_chapters": 36,
-    "new_volumes": 3
+    "new_volumes": 3,
+    "cover_url": "/static/covers/unknown_0PY4XA9EK3M09.jpg"
   },
   {
     "num": "166",
@@ -2183,7 +2362,8 @@
     "title_en": "",
     "title_jp": "",
     "new_chapters": 72,
-    "new_volumes": 6
+    "new_volumes": 6,
+    "cover_url": "/static/covers/unknown_0PY4XA9EK3M02.jpg"
   },
   {
     "num": "167",
@@ -2196,7 +2376,8 @@
     "title_en": "",
     "title_jp": "",
     "new_chapters": 48,
-    "new_volumes": 4
+    "new_volumes": 4,
+    "cover_url": "/static/covers/unknown_0PY4XA9EK3KZX.jpg"
   },
   {
     "num": "168",
@@ -2209,7 +2390,8 @@
     "title_en": "",
     "title_jp": "",
     "new_chapters": 12,
-    "new_volumes": 1
+    "new_volumes": 1,
+    "cover_url": "/static/covers/unknown_0PY4XA9EK3KZV.jpg"
   },
   {
     "num": "172",
@@ -2222,7 +2404,8 @@
     "title_en": "",
     "title_jp": "",
     "new_chapters": 39,
-    "new_volumes": 8
+    "new_volumes": 8,
+    "cover_url": "/static/covers/unknown_0PY4XA3WK3W44.jpg"
   },
   {
     "num": "173",
@@ -2235,7 +2418,8 @@
     "title_en": "",
     "title_jp": "",
     "new_chapters": 1176,
-    "new_volumes": 98
+    "new_volumes": 98,
+    "cover_url": "/static/covers/unknown_0PY1GY9YQ3Z7X.jpg"
   },
   {
     "num": "175",
@@ -2248,7 +2432,9 @@
     "title_en": "",
     "title_jp": "",
     "new_chapters": 170,
-    "new_volumes": 23
+    "new_volumes": 23,
+    "komga_series_id": "0K2H3AAR91SSC",
+    "cover_url": "/static/covers/unknown_0PY1GY9XK3RFN.jpg"
   },
   {
     "num": "177",
@@ -2261,7 +2447,8 @@
     "title_en": "",
     "title_jp": "",
     "new_chapters": 5,
-    "new_volumes": 6
+    "new_volumes": 6,
+    "cover_url": "/static/covers/unknown_0PY1GW7NB3WQE.jpg"
   },
   {
     "num": "178",
@@ -2274,7 +2461,8 @@
     "title_en": "",
     "title_jp": "",
     "new_chapters": 180,
-    "new_volumes": 15
+    "new_volumes": 15,
+    "cover_url": "/static/covers/unknown_0PTFJFW9QTJ6X.jpg"
   },
   {
     "name": "和雨·和你",
@@ -2285,6 +2473,8 @@
     "status": "RELEASING",
     "new_volumes": 0,
     "new_chapters": 0,
-    "new_status": "RELEASING"
+    "new_status": "RELEASING",
+    "komga_series_id": "0MD7JM0VG6QM6",
+    "cover_url": "/static/covers/unknown_0MD7JM0VG6QM6.jpg"
   }
 ]

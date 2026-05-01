@@ -924,34 +924,45 @@ def handle_get(handler, parsed) -> bool:
                         mapping = json.load(f)
                     for item in mapping:
                         if item.get('name_trad'):
-                            # 如果有 komga_series_id，使用代理 URL；否则使用原 cover_url
+                            name_trad = item['name_trad']
                             series_id = item.get('komga_series_id')
-                            if series_id:
-                                cover_map[item['name_trad']] = f'/api/manga/cover?seriesId={series_id}'
+                            
+                            # 優先使用 JSON 文件中已有的 cover_url（可能已經是本地封面路徑）
+                            existing_cover = item.get('cover_url')
+                            if existing_cover and existing_cover != 'None':
+                                cover_map[name_trad] = existing_cover
+                            elif series_id:
+                                # 檢查本地是否有封面文件
+                                import os
+                                local_cover = f'static/covers/unknown_{series_id}.jpg'
+                                if os.path.exists(local_cover):
+                                    cover_map[name_trad] = local_cover
+                                else:
+                                    # 最後才使用 Komga 代理
+                                    cover_map[name_trad] = f'/api/manga/cover?seriesId={series_id}'
                             else:
-                                cover_map[item['name_trad']] = item.get('cover_url')
-                            author_map[item['name_trad']] = item.get('author', '未知')
-                            date_map[item['name_trad']] = item.get('lastModified', 'N/A')
+                                cover_map[name_trad] = None
+                            
+                            author_map[name_trad] = item.get('author', '未知')
+                            date_map[name_trad] = item.get('lastModified', 'N/A')
                 
                 updates = []
                 if isinstance(updates_data, list):
                     for item in updates_data:
                         name = item.get('name', 'N/A')
-                        # 從映射中獲取 komga_series_id 和 anilist_id
-                        series_id = None
-                        anilist_id = None
-                        for m in mapping:
-                            if m.get('name_trad') == name:
-                                series_id = m.get('komga_series_id')
-                                anilist_id = m.get('anilist_id')
-                                break
                         
-                        # 決定封面 URL：優先使用 AniList 封面，否則用 Komga 代理
-                        cover_url = cover_map.get(name)
-                        if anilist_id and not cover_url:
-                            # 如果有 AniList ID 但沒有封面，嘗試構造 AniList 封面 URL
-                            # 注意：這需要從 AniList API 獲取，但先提供一個預設格式
-                            cover_url = f'https://anilist.co/img/dir/manga/{anilist_id}.jpg'
+                        # 優先使用 item 本身已有的 cover_url（從 manga_daily_update.json 讀取）
+                        cover_url = item.get('cover_url')
+                        
+                        # 如果沒有，才從映射中獲取
+                        if not cover_url:
+                            cover_url = cover_map.get(name)
+                        
+                        # 如果還是沒有，嘗試從 anilist_id 構造
+                        if not cover_url:
+                            anilist_id = item.get('anilist_id')
+                            if anilist_id:
+                                cover_url = f'https://anilist.co/img/dir/manga/{anilist_id}.jpg'
                         
                         updates.append({
                             'name': name,
@@ -960,10 +971,10 @@ def handle_get(handler, parsed) -> bool:
                             'status': item.get('new_status', item.get('status', 'N/A')),
                             'status_class': 'ongoing' if str(item.get('new_status') or item.get('status') or '').upper() == 'RELEASING' else 'ended',
                             'cover_url': cover_url,
-                            'author': author_map.get(name, '未知'),
-                            'lastModified': date_map.get(name, 'N/A'),
-                            'komga_series_id': series_id,
-                            'anilist_id': anilist_id
+                            'author': item.get('author', author_map.get(name, '未知')),
+                            'lastModified': item.get('lastModified', date_map.get(name, 'N/A')),
+                            'komga_series_id': item.get('komga_series_id'),
+                            'anilist_id': item.get('anilist_id')
                         })
                 return j(handler, {'updates': updates, 'total': len(updates)})
             else:

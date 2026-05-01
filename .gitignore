@@ -39,3 +39,4 @@ Thumbs.db
 docs/*
 !docs/ui-ux/
 !docs/ui-ux/**
+static/covers/
