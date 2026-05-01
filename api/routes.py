@@ -954,6 +954,17 @@ def handle_get(handler, parsed) -> bool:
                         # 優先使用 item 本身已有的 cover_url（從 manga_daily_update.json 讀取）
                         cover_url = item.get('cover_url')
                         
+                        # 如果是本地路徑，檢查文件是否存在（雲端環境可能沒有）
+                        if cover_url and cover_url.startswith('static/covers/'):
+                            import os
+                            if not os.path.exists(cover_url):
+                                # 本地封面不存在，嘗試使用 AniList 封面
+                                anilist_id = item.get('anilist_id')
+                                if anilist_id:
+                                    cover_url = f'https://anilist.co/img/dir/manga/{anilist_id}.jpg'
+                                else:
+                                    cover_url = None
+                        
                         # 如果沒有，才從映射中獲取
                         if not cover_url:
                             cover_url = cover_map.get(name)
