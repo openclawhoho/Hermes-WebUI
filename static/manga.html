@@ -1347,7 +1347,7 @@
                                         <div class="manga-title" style="margin-bottom:8px;" title="${update.name}">
                                             📚 ${update.name}
                                         </div>
-                                    <div class="manga-info" id="author-info-${index}">
+                                    <div class="manga-info" id="author-info-${index}" style="font-size: var(--small-font-size, 10px); color: var(--text-secondary, #fbbf24);">
                                         <span class="info-display">
                                             作者: ${update.author || '未知'}
                                         </span>
@@ -1355,7 +1355,7 @@
                                             作者: <input type="text" id="edit-author-${index}" value="${update.author || ''}" />
                                         </span>
                                     </div>
-                                    <div class="manga-info" id="date-info-${index}">
+                                    <div class="manga-info" id="date-info-${index}" style="font-size: var(--small-font-size, 10px); color: var(--text-secondary, #fbbf24);">
                                         <span class="info-display">
                                             更新: ${update.lastModified || 'N/A'}
                                         </span>
@@ -1363,7 +1363,7 @@
                                             更新: <input type="text" id="edit-date-${index}" value="${update.lastModified || ''}" placeholder="YYYY-MM-DD" />
                                         </span>
                                     </div>
-                                    <div class="manga-info" id="info-${index}">
+                                    <div class="manga-info" id="info-${index}" style="font-size: var(--small-font-size, 10px); color: var(--text-secondary, #fbbf24);">
                                         <span class="info-display">
                                             卷數: ${update.volume || 'N/A'}
                                         </span>
@@ -1371,7 +1371,7 @@
                                             卷數: <input type="number" id="edit-volume-${index}" value="${update.volume || 0}" min="0" />
                                         </span>
                                     </div>
-                                    <div class="manga-info" id="chapter-info-${index}">
+                                    <div class="manga-info" id="chapter-info-${index}" style="font-size: var(--small-font-size, 10px); color: var(--text-secondary, #fbbf24);">
                                         <span class="info-display">
                                             話數: ${update.chapter || 'N/A'}
                                         </span>
@@ -1379,7 +1379,7 @@
                                             話數: <input type="number" id="edit-chapter-${index}" value="${update.chapter || 0}" min="0" />
                                         </span>
                                     </div>
-                                    <div class="manga-info" id="status-info-${index}">
+                                    <div class="manga-info" id="status-info-${index}" style="font-size: var(--small-font-size, 10px); color: var(--text-secondary, #fbbf24);">
                                         <span class="info-display">
                                             狀態: ${update.status || 'N/A'}
                                         </span>
