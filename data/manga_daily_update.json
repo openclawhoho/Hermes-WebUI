@@ -6,13 +6,20 @@
     "chapters": 81,
     "volumes": 15,
     "status": "連載中",
-    "updated": "2026-05-01",
+    "updated": "2026-05-03",
     "title_en": "Heavenly Delusion",
     "title_jp": "天国大魔境",
     "new_volumes": 15,
     "new_chapters": 81,
     "new_status": "RELEASING",
-    "cover_url": "/static/covers/unknown_0Q75YP4K33TG8.jpg"
+    "cover_url": "/static/covers/unknown_0Q75YP4K33TG8.jpg",
+    "author": "Masakazu Ishiguro (石黒正数 )",
+    "author_detail": {
+      "authors": [
+        "Masakazu Ishiguro (石黒正数 )"
+      ],
+      "artists": []
+    }
   },
   {
     "num": "2",
@@ -21,7 +28,7 @@
     "chapters": 168,
     "volumes": 23,
     "status": "已完結",
-    "updated": "2026-05-01",
+    "updated": "2026-05-03",
     "title_en": "That Time I Got Reincarnated as a Slime",
     "title_jp": "転生したらスライムだった件",
     "market_tw_volumes": 20,
@@ -30,7 +37,16 @@
     "market_jp_volumes": 23,
     "market_chapters": 168,
     "cover_url": "/static/covers/unknown_0K2H6PD291ZYJ.jpg",
-    "komga_series_id": "0K2E9FY5X1ZDF"
+    "komga_series_id": "0K2E9FY5X1ZDF",
+    "author": "Fuse (伏瀬)、Mitz Vah (みっつばー)",
+    "author_detail": {
+      "authors": [
+        "Fuse (伏瀬)"
+      ],
+      "artists": [
+        "Mitz Vah (みっつばー)"
+      ]
+    }
   },
   {
     "num": "3",
@@ -46,7 +62,8 @@
     "new_chapters": 109,
     "new_status": "RELEASING",
     "komga_series_id": "0K2E9G6T51SP2",
-    "cover_url": "/static/covers/unknown_0K2E9G6T51SP2.jpg"
+    "cover_url": "/static/covers/unknown_0K2E9G6T51SP2.jpg",
+    "author": "千葉侑生"
   },
   {
     "num": "4",
@@ -55,14 +72,22 @@
     "chapters": 77,
     "volumes": 30,
     "status": "連載中",
-    "updated": "2026-05-01",
+    "updated": "2026-05-03",
     "title_en": "The Eminence in Shadow",
     "title_jp": "陰の実力者になりたくて！",
     "new_volumes": 30,
     "new_chapters": 77,
     "new_status": "RELEASING",
     "cover_url": "/static/covers/unknown_0K2E9GDP51Q9K.jpg",
-    "komga_series_id": "0K2E9GDP51Q9K"
+    "komga_series_id": "0K2E9GDP51Q9K",
+    "author": "Anri Sakano (坂野杏梨)、Daisuke Aizawa (逢沢大介)",
+    "author_detail": {
+      "authors": [
+        "Anri Sakano (坂野杏梨)",
+        "Daisuke Aizawa (逢沢大介)"
+      ],
+      "artists": []
+    }
   },
   {
     "num": "5",
@@ -78,7 +103,8 @@
     "new_chapters": 95,
     "new_status": "RELEASING",
     "komga_series_id": "0K2E9GGDS1PPC",
-    "cover_url": "/static/covers/unknown_0K2E9GGDS1PPC.jpg"
+    "cover_url": "/static/covers/unknown_0K2E9GGDS1PPC.jpg",
+    "author": "鈴木マサカズ"
   },
   {
     "num": "6",
@@ -87,7 +113,7 @@
     "chapters": 200,
     "volumes": 30,
     "status": "已完結",
-    "updated": "2026-05-01",
+    "updated": "2026-05-03",
     "title_en": "2.5 Dimensional Seduction",
     "title_jp": "2.5次元の誘惑",
     "new_volumes": 30,
@@ -96,7 +122,14 @@
     "market_jp_volumes": 25,
     "market_chapters": 241,
     "cover_url": "/static/covers/unknown_0K2E9GHV11KWD.jpg",
-    "komga_series_id": "0K2E9GHV11KWD"
+    "komga_series_id": "0K2E9GHV11KWD",
+    "author": "Yuu Hashimoto (橋本悠)",
+    "author_detail": {
+      "authors": [
+        "Yuu Hashimoto (橋本悠)"
+      ],
+      "artists": []
+    }
   },
   {
     "num": "7",
@@ -127,7 +160,8 @@
     "new_chapters": 115,
     "new_status": "RELEASING",
     "komga_series_id": "0K2E9GPA51TAW",
-    "cover_url": "/static/covers/unknown_0K2E9GPA51TAW.jpg"
+    "cover_url": "/static/covers/unknown_0K2E9GPA51TAW.jpg",
+    "author": "フジカワユカ,理不盡な孫の手、フジカワユカ,理不盡な孫の手,藤川由香"
   },
   {
     "num": "9",
@@ -136,7 +170,7 @@
     "chapters": 405,
     "volumes": 39,
     "status": "連載中",
-    "updated": "2026-05-01",
+    "updated": "2026-05-03",
     "title_en": "Sleepy Princess in the Demon Castle",
     "title_jp": "魔王城でおやすみ",
     "new_volumes": 24,
@@ -150,7 +184,14 @@
     "market_tw_date": "2025-09-15",
     "market_tw_isbn": "978-626-437-117-9",
     "cover_url": "/static/covers/unknown_0K2E9GPGN1PYS.jpg",
-    "komga_series_id": "0K2E9GPGN1PYS"
+    "komga_series_id": "0K2E9GPGN1PYS",
+    "author": "Kagiji Kumanomata (熊之股鍵次)",
+    "author_detail": {
+      "authors": [
+        "Kagiji Kumanomata (熊之股鍵次)"
+      ],
+      "artists": []
+    }
   },
   {
     "num": "10",
@@ -159,14 +200,21 @@
     "chapters": 48,
     "volumes": 18,
     "status": "連載中",
-    "updated": "2026-05-01",
+    "updated": "2026-05-03",
     "title_en": "Magus of the Library",
     "title_jp": "図書館の大魔術師",
     "new_volumes": 18,
     "new_chapters": 48,
     "new_status": "RELEASING",
     "cover_url": "/static/covers/unknown_0K2E9GRAS1HF2.jpg",
-    "komga_series_id": "0K2E9GRAS1HF2"
+    "komga_series_id": "0K2E9GRAS1HF2",
+    "author": "Mitsu Izumi (泉光)",
+    "author_detail": {
+      "authors": [
+        "Mitsu Izumi (泉光)"
+      ],
+      "artists": []
+    }
   },
   {
     "num": "11",
@@ -175,7 +223,7 @@
     "chapters": 70,
     "volumes": 10,
     "status": "已完結",
-    "updated": "2026-05-01",
+    "updated": "2026-05-03",
     "title_en": null,
     "title_jp": "異世界不倫Ⅱ～導かれし人妻たちと不器用転生勇者～",
     "new_volumes": 10,
@@ -184,7 +232,16 @@
     "market_jp_volumes": 9,
     "market_chapters": 72,
     "cover_url": "/static/covers/unknown_0K2E9H5FX1ZSJ.jpg",
-    "komga_series_id": "0K2E9H5FX1ZSJ"
+    "komga_series_id": "0K2E9H5FX1ZSJ",
+    "author": "Masakazu Ooi (大井昌和)、Inomaru (いのまる)",
+    "author_detail": {
+      "authors": [
+        "Masakazu Ooi (大井昌和)"
+      ],
+      "artists": [
+        "Inomaru (いのまる)"
+      ]
+    }
   },
   {
     "num": "12",
@@ -209,14 +266,21 @@
     "chapters": 248,
     "volumes": 63,
     "status": "已完結",
-    "updated": "2026-05-01",
+    "updated": "2026-05-03",
     "title_en": "Chihayafuru",
     "title_jp": "ちはやふる",
     "new_volumes": 63,
     "market_jp_volumes": 50,
     "market_chapters": 248,
     "cover_url": "/static/covers/unknown_0K2E9J7C11XW1.jpg",
-    "komga_series_id": "0K2E9J7C11XW1"
+    "komga_series_id": "0K2E9J7C11XW1",
+    "author": "Yuki Suetsugu (末次由紀)",
+    "author_detail": {
+      "authors": [
+        "Yuki Suetsugu (末次由紀)"
+      ],
+      "artists": []
+    }
   },
   {
     "num": "14",
@@ -232,7 +296,8 @@
     "new_chapters": 6,
     "new_status": "RELEASING",
     "komga_series_id": "0K2E9JANH1NB7",
-    "cover_url": "/static/covers/unknown_0K2E9JANH1NB7.jpg"
+    "cover_url": "/static/covers/unknown_0K2E9JANH1NB7.jpg",
+    "author": "優木すず,香坂マト,がおう"
   },
   {
     "num": "15",
@@ -248,7 +313,8 @@
     "new_chapters": 56,
     "new_status": "RELEASING",
     "komga_series_id": "0K2E9JANS1Q0B",
-    "cover_url": "/static/covers/unknown_0K2E9JANS1Q0B.jpg"
+    "cover_url": "/static/covers/unknown_0K2E9JANS1Q0B.jpg",
+    "author": "つるまいかだ,鶴舞墨魚太"
   },
   {
     "num": "16",
@@ -264,22 +330,24 @@
     "new_chapters": 115,
     "new_status": "RELEASING",
     "komga_series_id": "0K2E9JE1S1JCG",
-    "cover_url": "/static/covers/unknown_0K2E9JE1S1JCG.jpg"
+    "cover_url": "/static/covers/unknown_0K2E9JE1S1JCG.jpg",
+    "author": "梅村真也,アジチカ"
   },
   {
     "num": "17",
     "name": "膽大黨",
-    "anilist_id": "",
+    "anilist_id": 132029,
     "chapters": 231,
     "volumes": 20,
-    "status": "RELEASING",
-    "updated": "2026-04-29",
+    "status": "連載中",
+    "updated": "2026-05-03",
     "title_en": "",
     "title_jp": "",
     "new_volumes": 20,
     "new_chapters": 231,
     "new_status": "RELEASING",
-    "cover_url": "/static/covers/unknown_0P66T20DZBCD4.jpg"
+    "cover_url": "/static/covers/unknown_0P66T20DZBCD4.jpg",
+    "author": "Yukinobu Tatsu (龍幸伸)"
   },
   {
     "num": "18",
@@ -309,36 +377,39 @@
     "new_volumes": 16,
     "new_status": "RELEASING",
     "komga_series_id": "0K8WPY8T2SYXA",
-    "cover_url": "/static/covers/unknown_0P3P7PK4KB3GX.jpg"
+    "cover_url": "/static/covers/unknown_0P3P7PK4KB3GX.jpg",
+    "author": "あfろ"
   },
   {
     "num": "20",
     "name": "薰香花朵凜然綻放",
-    "anilist_id": "",
+    "anilist_id": 140475,
     "chapters": 117,
     "volumes": 15,
-    "status": "RELEASING",
-    "updated": "2026-04-29",
+    "status": "連載中",
+    "updated": "2026-05-03",
     "title_en": "",
     "title_jp": "",
     "new_volumes": 15,
     "new_chapters": 117,
     "new_status": "RELEASING",
-    "cover_url": "/static/covers/unknown_0P8FACEEVBB5N.jpg"
+    "cover_url": "/static/covers/unknown_0P8FACEEVBB5N.jpg",
+    "author": "Saka Mikami (三香見サカ)"
   },
   {
     "num": "21",
     "name": "葬送的芙莉蓮",
-    "anilist_id": "",
+    "anilist_id": 118586,
     "chapters": 147,
     "volumes": 24,
-    "status": "未找到",
-    "updated": "2026-04-29",
+    "status": "連載中",
+    "updated": "2026-05-03",
     "title_en": "",
     "title_jp": "",
     "new_chapters": 147,
     "new_volumes": 24,
-    "cover_url": "/static/covers/unknown_0P9BPRXPVB6MW.jpg"
+    "cover_url": "/static/covers/unknown_0P9BPRXPVB6MW.jpg",
+    "author": "Kanehito Yamada (山田鐘人)"
   },
   {
     "num": "22",
@@ -357,16 +428,17 @@
   {
     "num": "23",
     "name": "鬼畜英雄",
-    "anilist_id": "",
+    "anilist_id": 139415,
     "chapters": 99,
     "volumes": 16,
-    "status": "未找到",
-    "updated": "2026-04-29",
+    "status": "連載中",
+    "updated": "2026-05-03",
     "title_en": "",
     "title_jp": "",
     "new_chapters": 99,
     "new_volumes": 16,
-    "cover_url": "/static/covers/unknown_0P9YXBAMQB7HK.jpg"
+    "cover_url": "/static/covers/unknown_0P9YXBAMQB7HK.jpg",
+    "author": "Yonoki (よのき)"
   },
   {
     "num": "24",
@@ -380,7 +452,8 @@
     "title_jp": "",
     "new_chapters": 90,
     "new_volumes": 13,
-    "cover_url": "/static/covers/unknown_0PCWM7R7X046B.jpg"
+    "cover_url": "/static/covers/unknown_0PCWM7R7X046B.jpg",
+    "author": "はまじあき"
   },
   {
     "num": "25",
@@ -411,64 +484,69 @@
     "new_volumes": 12,
     "new_status": "RELEASING",
     "komga_series_id": "0K2H6PC3X1XR7",
-    "cover_url": "/static/covers/unknown_0PPJ3J5806PHW.jpg"
+    "cover_url": "/static/covers/unknown_0PPJ3J5806PHW.jpg",
+    "author": "日向夏"
   },
   {
     "num": "27",
     "name": "派對咖孔明",
-    "anilist_id": "",
+    "anilist_id": 123034,
     "chapters": 207,
     "volumes": 17,
-    "status": "RELEASING",
-    "updated": "2026-04-29",
+    "status": "連載中",
+    "updated": "2026-05-03",
     "title_en": "",
     "title_jp": "",
     "new_chapters": 207,
     "new_volumes": 17,
     "new_status": "RELEASING",
-    "cover_url": "/static/covers/unknown_0PQM02SD06V0F.jpg"
+    "cover_url": "/static/covers/unknown_0PQM02SD06V0F.jpg",
+    "author": "Yuto Yotsuba (四葉タト)"
   },
   {
     "num": "28",
     "name": "SPY×FAMILY 間諜家家酒",
-    "anilist_id": "",
+    "anilist_id": 108556,
     "chapters": 132,
     "volumes": 54,
-    "status": "未找到",
-    "updated": "2026-04-29",
+    "status": "連載中",
+    "updated": "2026-05-03",
     "title_en": "",
     "title_jp": "",
     "new_chapters": 132,
     "new_volumes": 54,
-    "cover_url": "/static/covers/unknown_0PR8BAFX46TY5.jpg"
+    "cover_url": "/static/covers/unknown_0PR8BAFX46TY5.jpg",
+    "author": "Tatsuya Endou (遠藤達哉)"
   },
   {
     "num": "29",
     "name": "WIND BREAKER",
-    "anilist_id": "",
+    "anilist_id": 135083,
     "chapters": 185,
     "volumes": 71,
-    "status": "未找到",
-    "updated": "2026-04-29",
+    "status": "連載中",
+    "updated": "2026-05-03",
     "title_en": "",
     "title_jp": "",
     "new_chapters": 185,
     "new_volumes": 71,
-    "cover_url": "/static/covers/unknown_0PS31FJ3G6RK3.jpg"
+    "cover_url": "/static/covers/unknown_0PS31FJ3G6RK3.jpg",
+    "author": "Satoru Nii (にいさとる)"
   },
   {
     "num": "30",
     "name": "雷雷雷",
-    "anilist_id": "",
+    "anilist_id": 168435,
     "chapters": 45,
     "volumes": 86,
-    "status": "未找到",
-    "updated": "2026-04-29",
+    "status": "連載中",
+    "updated": "2026-05-03",
     "title_en": "",
     "title_jp": "",
     "new_chapters": 45,
     "new_volumes": 86,
-    "cover_url": "/static/covers/unknown_0PS7A2AQR6T5P.jpg"
+    "cover_url": "/static/covers/unknown_0PS7A2AQR6T5P.jpg",
+    "author": "Satoshi  Yoshiaki (芳明慧)"
   },
   {
     "num": "31",
@@ -510,7 +588,8 @@
     "title_jp": "",
     "new_chapters": 50,
     "new_volumes": 10,
-    "cover_url": "/static/covers/unknown_0PY1GY9WQ3K38.jpg"
+    "cover_url": "/static/covers/unknown_0PY1GY9WQ3K38.jpg",
+    "author": "でむにゃん,炭酸だいすき"
   },
   {
     "num": "34",
@@ -524,7 +603,8 @@
     "title_jp": "",
     "new_chapters": 236,
     "new_volumes": 37,
-    "cover_url": "/static/covers/unknown_0PPFH62446XQ1.jpg"
+    "cover_url": "/static/covers/unknown_0PPFH62446XQ1.jpg",
+    "author": "三浦糀"
   },
   {
     "num": "35",
@@ -599,16 +679,17 @@
   {
     "num": "40",
     "name": "琉璃龍龍",
-    "anilist_id": "",
+    "anilist_id": 150440,
     "chapters": 45,
     "volumes": 40,
-    "status": "未找到",
-    "updated": "2026-04-29",
+    "status": "連載中",
+    "updated": "2026-05-03",
     "title_en": "",
     "title_jp": "",
     "new_chapters": 45,
     "new_volumes": 40,
-    "cover_url": "/static/covers/unknown_0PQM02SCC6YB0.jpg"
+    "cover_url": "/static/covers/unknown_0PQM02SCC6YB0.jpg",
+    "author": "Masaoki Shindou (眞藤雅興)"
   },
   {
     "num": "41",
@@ -636,7 +717,8 @@
     "title_jp": "",
     "new_chapters": 415,
     "new_volumes": 58,
-    "cover_url": "/static/covers/unknown_0PS4AHP5C6X4Q.jpg"
+    "cover_url": "/static/covers/unknown_0PS4AHP5C6X4Q.jpg",
+    "author": "宮島禮吏"
   },
   {
     "num": "43",
@@ -664,21 +746,23 @@
     "title_jp": "",
     "new_chapters": 81,
     "new_volumes": 16,
-    "cover_url": "/static/covers/unknown_0PYF78VEQ3J1C.jpg"
+    "cover_url": "/static/covers/unknown_0PYF78VEQ3J1C.jpg",
+    "author": "森田季節,シバユウスケ"
   },
   {
     "num": "45",
     "name": "尖帽子的魔法工房",
-    "anilist_id": "",
+    "anilist_id": 98263,
     "chapters": 88,
     "volumes": 88,
-    "status": "未找到",
-    "updated": "2026-04-29",
+    "status": "連載中",
+    "updated": "2026-05-03",
     "title_en": "",
     "title_jp": "",
     "new_chapters": 88,
     "new_volumes": 88,
-    "cover_url": "/static/covers/unknown_0Q1F4FW6B3NNT.jpg"
+    "cover_url": "/static/covers/unknown_0Q1F4FW6B3NNT.jpg",
+    "author": "Kamome Shirahama (白浜鴎)"
   },
   {
     "num": "46",
@@ -762,7 +846,8 @@
     "title_jp": "",
     "new_chapters": 175,
     "new_volumes": 35,
-    "cover_url": "/static/covers/unknown_0PZ1EVPYZ3RFH.jpg"
+    "cover_url": "/static/covers/unknown_0PZ1EVPYZ3RFH.jpg",
+    "author": "クール教信者"
   },
   {
     "num": "52",
@@ -776,7 +861,8 @@
     "title_jp": "",
     "new_chapters": 254,
     "new_volumes": 65,
-    "cover_url": "/static/covers/unknown_0PYSB5ABZ3Z8B.jpg"
+    "cover_url": "/static/covers/unknown_0PYSB5ABZ3Z8B.jpg",
+    "author": "鈴木祐鬥"
   },
   {
     "num": "53",
@@ -790,7 +876,8 @@
     "title_jp": "",
     "new_chapters": 320,
     "new_volumes": 42,
-    "cover_url": "/static/covers/unknown_0PYPH63VK3YN1.jpg"
+    "cover_url": "/static/covers/unknown_0PYPH63VK3YN1.jpg",
+    "author": "山田恵庸、山田惠庸、山田惠庸,山田恵庸"
   },
   {
     "num": "54",
@@ -804,7 +891,8 @@
     "title_jp": "",
     "new_chapters": 57,
     "new_volumes": 11,
-    "cover_url": "/static/covers/unknown_0PYNY7T5K3PST.jpg"
+    "cover_url": "/static/covers/unknown_0PYNY7T5K3PST.jpg",
+    "author": "柊裕一"
   },
   {
     "num": "55",
@@ -818,7 +906,8 @@
     "title_jp": "",
     "new_chapters": 51,
     "new_volumes": 9,
-    "cover_url": "/static/covers/unknown_0PYNY7T5K3PSF.jpg"
+    "cover_url": "/static/covers/unknown_0PYNY7T5K3PSF.jpg",
+    "author": "鍋倉夫"
   },
   {
     "num": "56",
@@ -832,7 +921,8 @@
     "title_jp": "",
     "new_chapters": 210,
     "new_volumes": 36,
-    "cover_url": "/static/covers/unknown_0PYB7J6P33V39.jpg"
+    "cover_url": "/static/covers/unknown_0PYB7J6P33V39.jpg",
+    "author": "春場ねぎ,春場蔥"
   },
   {
     "num": "57",
@@ -846,7 +936,8 @@
     "title_jp": "",
     "new_chapters": 865,
     "new_volumes": 100,
-    "cover_url": "/static/covers/unknown_0PY0VGVNZ3XPE.jpg"
+    "cover_url": "/static/covers/unknown_0PY0VGVNZ3XPE.jpg",
+    "author": "原泰久"
   },
   {
     "num": "58",
@@ -860,7 +951,8 @@
     "title_jp": "",
     "new_chapters": 60,
     "new_volumes": 12,
-    "cover_url": "/static/covers/unknown_0PXGS9H2VV8EW.jpg"
+    "cover_url": "/static/covers/unknown_0PXGS9H2VV8EW.jpg",
+    "author": "野人,小林嵩人"
   },
   {
     "num": "59",
@@ -874,7 +966,8 @@
     "title_jp": "",
     "new_chapters": 59,
     "new_volumes": 12,
-    "cover_url": "/static/covers/unknown_0PXEP9V0KVECN.jpg"
+    "cover_url": "/static/covers/unknown_0PXEP9V0KVECN.jpg",
+    "author": "赤岸K,江口連,雅"
   },
   {
     "num": "60",
@@ -888,7 +981,8 @@
     "title_jp": "",
     "new_chapters": 155,
     "new_volumes": 23,
-    "cover_url": "/static/covers/unknown_0PWEAMHQQVBX4.jpg"
+    "cover_url": "/static/covers/unknown_0PWEAMHQQVBX4.jpg",
+    "author": "青木裕,岩田雪花"
   },
   {
     "num": "61",
@@ -902,7 +996,8 @@
     "title_jp": "",
     "new_chapters": 825,
     "new_volumes": 19,
-    "cover_url": "/static/covers/unknown_0Q75YP4RB3PJT.jpg"
+    "cover_url": "/static/covers/unknown_0Q75YP4RB3PJT.jpg",
+    "author": "石黑正數"
   },
   {
     "num": "62",
@@ -916,7 +1011,8 @@
     "title_jp": "",
     "new_chapters": 24,
     "new_volumes": 2,
-    "cover_url": "/static/covers/unknown_0Q75YP4JK3ZN3.jpg"
+    "cover_url": "/static/covers/unknown_0Q75YP4JK3ZN3.jpg",
+    "author": "石黑正數"
   },
   {
     "num": "63",
@@ -944,7 +1040,8 @@
     "title_jp": "",
     "new_chapters": 1178,
     "new_volumes": 1180,
-    "cover_url": "/static/covers/unknown_0PPMVP1NC6K23.jpg"
+    "cover_url": "/static/covers/unknown_0PPMVP1NC6K23.jpg",
+    "author": "尾田榮一郎"
   },
   {
     "num": "66",
@@ -963,16 +1060,17 @@
   {
     "num": "67",
     "name": "異世界好色無雙錄",
-    "anilist_id": "",
+    "anilist_id": 162321,
     "chapters": 55,
     "volumes": 55,
-    "status": "未找到",
-    "updated": "2026-04-29",
+    "status": "連載中",
+    "updated": "2026-05-03",
     "title_en": "",
     "title_jp": "",
     "new_chapters": 55,
     "new_volumes": 55,
-    "cover_url": "/static/covers/unknown_0PSJ9F3GW6Q5Z.jpg"
+    "cover_url": "/static/covers/unknown_0PSJ9F3GW6Q5Z.jpg",
+    "author": "Ohana-chan (おはなちゃん), Ikuhito (イクヒト)"
   },
   {
     "num": "68",
@@ -987,7 +1085,8 @@
     "new_chapters": 120,
     "new_volumes": 10,
     "komga_series_id": "0K2H3A8EN1RAA",
-    "cover_url": "/static/covers/unknown_0Q6PG94P33J9Q.jpg"
+    "cover_url": "/static/covers/unknown_0Q6PG94P33J9Q.jpg",
+    "author": "岸本斉史"
   },
   {
     "num": "69",
@@ -1014,7 +1113,8 @@
     "title_en": "",
     "title_jp": "",
     "komga_series_id": "0K2H3A8EN1RAA",
-    "cover_url": "/static/covers/unknown_0Q6PG94P33J9Q.jpg"
+    "cover_url": "/static/covers/unknown_0Q6PG94P33J9Q.jpg",
+    "author": "岸本斉史"
   },
   {
     "num": "71",
@@ -1028,7 +1128,8 @@
     "title_jp": "",
     "new_chapters": 215,
     "new_volumes": 36,
-    "cover_url": "/static/covers/unknown_0Q6ES35XB3YH2.jpg"
+    "cover_url": "/static/covers/unknown_0Q6ES35XB3YH2.jpg",
+    "author": "太田垣康男,富野由悠季"
   },
   {
     "num": "72",
@@ -1042,21 +1143,23 @@
     "title_jp": "",
     "new_chapters": 48,
     "new_volumes": 4,
-    "cover_url": "/static/covers/unknown_0Q1PVMSXK3JW6.jpg"
+    "cover_url": "/static/covers/unknown_0Q1PVMSXK3JW6.jpg",
+    "author": "北條司"
   },
   {
     "num": "73",
     "name": "落語朱音",
-    "anilist_id": "",
+    "anilist_id": 144866,
     "chapters": 204,
     "volumes": 17,
-    "status": "未找到",
-    "updated": "2026-04-29",
+    "status": "連載中",
+    "updated": "2026-05-03",
     "title_en": "",
     "title_jp": "",
     "new_chapters": 204,
     "new_volumes": 17,
-    "cover_url": "/static/covers/unknown_0Q4SVQCG33H18.jpg"
+    "cover_url": "/static/covers/unknown_0Q4SVQCG33H18.jpg",
+    "author": "Yuuki Suenaga (末永裕樹)"
   },
   {
     "num": "74",
@@ -1098,7 +1201,8 @@
     "title_jp": "",
     "new_chapters": 156,
     "new_volumes": 13,
-    "cover_url": "/static/covers/unknown_0Q3GFY7R33TNR.jpg"
+    "cover_url": "/static/covers/unknown_0Q3GFY7R33TNR.jpg",
+    "author": "寺沢大介"
   },
   {
     "num": "77",
@@ -1112,7 +1216,8 @@
     "title_jp": "",
     "new_chapters": 228,
     "new_volumes": 19,
-    "cover_url": "/static/covers/unknown_0Q3GFY7QZ3XV4.jpg"
+    "cover_url": "/static/covers/unknown_0Q3GFY7QZ3XV4.jpg",
+    "author": "寺沢大介"
   },
   {
     "num": "78",
@@ -1126,7 +1231,8 @@
     "title_jp": "",
     "new_chapters": 324,
     "new_volumes": 27,
-    "cover_url": "/static/covers/unknown_0Q3GFY7QV3S4C.jpg"
+    "cover_url": "/static/covers/unknown_0Q3GFY7QV3S4C.jpg",
+    "author": "寺沢大介"
   },
   {
     "num": "79",
@@ -1140,7 +1246,8 @@
     "title_jp": "",
     "new_chapters": 204,
     "new_volumes": 17,
-    "cover_url": "/static/covers/unknown_0Q3GFY7QV3S3T.jpg"
+    "cover_url": "/static/covers/unknown_0Q3GFY7QV3S3T.jpg",
+    "author": "寺沢大介"
   },
   {
     "num": "80",
@@ -1154,7 +1261,8 @@
     "title_jp": "",
     "new_chapters": 160,
     "new_volumes": 23,
-    "cover_url": "/static/covers/unknown_0Q3GFY7QQ3VM3.jpg"
+    "cover_url": "/static/covers/unknown_0Q3GFY7QQ3VM3.jpg",
+    "author": "稻光伸二、稻光伸二,稲光伸二"
   },
   {
     "num": "81",
@@ -1168,7 +1276,8 @@
     "title_jp": "",
     "new_chapters": 55,
     "new_volumes": 8,
-    "cover_url": "/static/covers/unknown_0Q3GFY7QK3HK4.jpg"
+    "cover_url": "/static/covers/unknown_0Q3GFY7QK3HK4.jpg",
+    "author": "或十せねか,稲光伸二,Rusty Soul"
   },
   {
     "num": "82",
@@ -1182,7 +1291,8 @@
     "title_jp": "",
     "new_chapters": 24,
     "new_volumes": 2,
-    "cover_url": "/static/covers/unknown_0Q3GFY5Q33J9R.jpg"
+    "cover_url": "/static/covers/unknown_0Q3GFY5Q33J9R.jpg",
+    "author": "藤子·F·不二雄"
   },
   {
     "num": "83",
@@ -1224,7 +1334,8 @@
     "title_jp": "",
     "new_chapters": 156,
     "new_volumes": 13,
-    "cover_url": "/static/covers/unknown_0Q379NFMZ3VAA.jpg"
+    "cover_url": "/static/covers/unknown_0Q379NFMZ3VAA.jpg",
+    "author": "周顯宗"
   },
   {
     "num": "86",
@@ -1238,7 +1349,8 @@
     "title_jp": "",
     "new_chapters": 261,
     "new_volumes": 42,
-    "cover_url": "/static/covers/unknown_0P9EF4VGQB3ND.jpg"
+    "cover_url": "/static/covers/unknown_0P9EF4VGQB3ND.jpg",
+    "author": "硬梨菜,不二涼介"
   },
   {
     "num": "87",
@@ -1280,7 +1392,8 @@
     "title_jp": "",
     "new_chapters": 12,
     "new_volumes": 1,
-    "cover_url": "/static/covers/unknown_0Q1F4FY733NRD.jpg"
+    "cover_url": "/static/covers/unknown_0Q1F4FY733NRD.jpg",
+    "author": "白浜鷗"
   },
   {
     "num": "90",
@@ -1337,7 +1450,8 @@
     "new_chapters": 456,
     "new_volumes": 38,
     "komga_series_id": "0K2H6P8591PF7",
-    "cover_url": "/static/covers/unknown_0K2H6P8591PF7.jpg"
+    "cover_url": "/static/covers/unknown_0K2H6P8591PF7.jpg",
+    "author": "Mensa門薩學會、Gemma Correll、稀見理都、周春才、はいし·かおり,葉石香織、Lewis Carroll、仁木悦子、青柳碧人、早坂吝(早坂吝)、[挪威]乔斯坦·贾德、Biblical Studies Press、ERIN HUNTER"
   },
   {
     "num": "94",
@@ -1379,7 +1493,8 @@
     "title_jp": "",
     "new_chapters": 70,
     "new_volumes": 13,
-    "cover_url": "/static/covers/unknown_0PYPH63WF3RJ8.jpg"
+    "cover_url": "/static/covers/unknown_0PYPH63WF3RJ8.jpg",
+    "author": "古味慎也"
   },
   {
     "num": "97",
@@ -1408,7 +1523,8 @@
     "new_chapters": 216,
     "new_volumes": 18,
     "komga_series_id": "0K2H3ABD51YBQ",
-    "cover_url": "/static/covers/unknown_0Q1PVNCWF3Z0C.jpg"
+    "cover_url": "/static/covers/unknown_0Q1PVNCWF3Z0C.jpg",
+    "author": "荒川弘"
   },
   {
     "num": "99",
@@ -1436,7 +1552,8 @@
     "title_jp": "",
     "new_chapters": 315,
     "new_volumes": 44,
-    "cover_url": "/static/covers/unknown_0P85DH4YVB3PD.jpg"
+    "cover_url": "/static/covers/unknown_0P85DH4YVB3PD.jpg",
+    "author": "高橋留美子"
   },
   {
     "num": "101",
@@ -1479,7 +1596,8 @@
     "new_chapters": 115,
     "new_volumes": 38,
     "komga_series_id": "0K47MDMHN1J0Z",
-    "cover_url": "/static/covers/unknown_0PZ1EVQ1F3YY6.jpg"
+    "cover_url": "/static/covers/unknown_0PZ1EVQ1F3YY6.jpg",
+    "author": "あずみ圭"
   },
   {
     "num": "104",
@@ -1493,7 +1611,8 @@
     "title_jp": "",
     "new_chapters": 60,
     "new_volumes": 9,
-    "cover_url": "/static/covers/unknown_0PZ1EVP0Z3WSF.jpg"
+    "cover_url": "/static/covers/unknown_0PZ1EVP0Z3WSF.jpg",
+    "author": "ノブヨシ侍,クール教信者"
   },
   {
     "num": "105",
@@ -1507,7 +1626,8 @@
     "title_jp": "",
     "new_chapters": 96,
     "new_volumes": 8,
-    "cover_url": "/static/covers/unknown_0PYSB5ABZ3Z81.jpg"
+    "cover_url": "/static/covers/unknown_0PYSB5ABZ3Z81.jpg",
+    "author": "RETSU,古館春一"
   },
   {
     "num": "106",
@@ -1521,7 +1641,8 @@
     "title_jp": "",
     "new_chapters": 540,
     "new_volumes": 45,
-    "cover_url": "/static/covers/unknown_0PYSB5ABB3JNK.jpg"
+    "cover_url": "/static/covers/unknown_0PYSB5ABB3JNK.jpg",
+    "author": "古館春一"
   },
   {
     "num": "107",
@@ -1535,7 +1656,8 @@
     "title_jp": "",
     "new_chapters": 72,
     "new_volumes": 6,
-    "cover_url": "/static/covers/unknown_0PYSB5ABB3JNC.jpg"
+    "cover_url": "/static/covers/unknown_0PYSB5ABB3JNC.jpg",
+    "author": "宮島京平"
   },
   {
     "num": "108",
@@ -1549,7 +1671,8 @@
     "title_jp": "",
     "new_chapters": 24,
     "new_volumes": 2,
-    "cover_url": "/static/covers/unknown_0PYSB54WZ3GMA.jpg"
+    "cover_url": "/static/covers/unknown_0PYSB54WZ3GMA.jpg",
+    "author": "北條司"
   },
   {
     "num": "109",
@@ -1563,7 +1686,8 @@
     "title_jp": "",
     "new_chapters": 40,
     "new_volumes": 8,
-    "cover_url": "/static/covers/unknown_0PYPH63WB3QKX.jpg"
+    "cover_url": "/static/covers/unknown_0PYPH63WB3QKX.jpg",
+    "author": "青色まろ,赤池宗"
   },
   {
     "num": "110",
@@ -1577,7 +1701,8 @@
     "title_jp": "",
     "new_chapters": 24,
     "new_volumes": 2,
-    "cover_url": "/static/covers/unknown_0PYP0ZYPF3XR7.jpg"
+    "cover_url": "/static/covers/unknown_0PYP0ZYPF3XR7.jpg",
+    "author": "志水明,志水アキ"
   },
   {
     "num": "111",
@@ -1591,7 +1716,8 @@
     "title_jp": "",
     "new_chapters": 924,
     "new_volumes": 77,
-    "cover_url": "/static/covers/unknown_0PYP0ZYNZ3ZAS.jpg"
+    "cover_url": "/static/covers/unknown_0PYP0ZYNZ3ZAS.jpg",
+    "author": "空知英秋"
   },
   {
     "num": "112",
@@ -1605,7 +1731,8 @@
     "title_jp": "",
     "new_chapters": 270,
     "new_volumes": 56,
-    "cover_url": "/static/covers/unknown_0PYNY7T5Q3XBD.jpg"
+    "cover_url": "/static/covers/unknown_0PYNY7T5Q3XBD.jpg",
+    "author": "村田雄介,ONE"
   },
   {
     "num": "113",
@@ -1619,7 +1746,8 @@
     "title_jp": "",
     "new_chapters": 113,
     "new_volumes": 30,
-    "cover_url": "/static/covers/unknown_0PYNY7T5B3K56.jpg"
+    "cover_url": "/static/covers/unknown_0PYNY7T5B3K56.jpg",
+    "author": "山口ミコト,北河トウタ"
   },
   {
     "num": "114",
@@ -1689,7 +1817,8 @@
     "title_jp": "",
     "new_chapters": 492,
     "new_volumes": 41,
-    "cover_url": "/static/covers/unknown_0PYNNC3RF3SGS.jpg"
+    "cover_url": "/static/covers/unknown_0PYNNC3RF3SGS.jpg",
+    "author": "鈴木央"
   },
   {
     "num": "119",
@@ -1731,7 +1860,8 @@
     "title_jp": "",
     "new_chapters": 12,
     "new_volumes": 1,
-    "cover_url": "/static/covers/unknown_0PYJE4B2F3JAZ.jpg"
+    "cover_url": "/static/covers/unknown_0PYJE4B2F3JAZ.jpg",
+    "author": "高橋留美子"
   },
   {
     "num": "122",
@@ -1745,7 +1875,8 @@
     "title_jp": "",
     "new_chapters": 24,
     "new_volumes": 2,
-    "cover_url": "/static/covers/unknown_0PYHR3MRB3HVJ.jpg"
+    "cover_url": "/static/covers/unknown_0PYHR3MRB3HVJ.jpg",
+    "author": "魚豊"
   },
   {
     "num": "123",
@@ -1759,7 +1890,8 @@
     "title_jp": "",
     "new_chapters": 36,
     "new_volumes": 3,
-    "cover_url": "/static/covers/unknown_0PYHR3JTV3RRZ.jpg"
+    "cover_url": "/static/covers/unknown_0PYHR3JTV3RRZ.jpg",
+    "author": "高橋留美子"
   },
   {
     "num": "124",
@@ -1787,7 +1919,8 @@
     "title_jp": "",
     "new_chapters": 36,
     "new_volumes": 3,
-    "cover_url": "/static/covers/unknown_0PYHPKD1Q3SMS.jpg"
+    "cover_url": "/static/covers/unknown_0PYHPKD1Q3SMS.jpg",
+    "author": "周顯宗,周銘峰,全家人"
   },
   {
     "num": "126",
@@ -1801,7 +1934,8 @@
     "title_jp": "",
     "new_chapters": 10,
     "new_volumes": 2,
-    "cover_url": "/static/covers/unknown_0PYHPKD1K3T64.jpg"
+    "cover_url": "/static/covers/unknown_0PYHPKD1K3T64.jpg",
+    "author": "周顯宗,陳漢民"
   },
   {
     "num": "127",
@@ -1815,7 +1949,8 @@
     "title_jp": "",
     "new_chapters": 228,
     "new_volumes": 19,
-    "cover_url": "/static/covers/unknown_0PYHPKD1F3SEY.jpg"
+    "cover_url": "/static/covers/unknown_0PYHPKD1F3SEY.jpg",
+    "author": "周顯宗"
   },
   {
     "num": "128",
@@ -1829,7 +1964,8 @@
     "title_jp": "",
     "new_chapters": 12,
     "new_volumes": 1,
-    "cover_url": "/static/covers/unknown_0PYHPKD1F3SEW.jpg"
+    "cover_url": "/static/covers/unknown_0PYHPKD1F3SEW.jpg",
+    "author": "周顯宗"
   },
   {
     "num": "129",
@@ -1843,7 +1979,8 @@
     "title_jp": "",
     "new_chapters": 264,
     "new_volumes": 22,
-    "cover_url": "/static/covers/unknown_0PYHPKD173ZY8.jpg"
+    "cover_url": "/static/covers/unknown_0PYHPKD173ZY8.jpg",
+    "author": "周顯宗"
   },
   {
     "num": "130",
@@ -1857,7 +1994,8 @@
     "title_jp": "",
     "new_chapters": 12,
     "new_volumes": 1,
-    "cover_url": "/static/covers/unknown_0PYHPKD173ZY6.jpg"
+    "cover_url": "/static/covers/unknown_0PYHPKD173ZY6.jpg",
+    "author": "周顯宗"
   },
   {
     "num": "131",
@@ -1942,7 +2080,8 @@
     "title_jp": "",
     "new_chapters": 108,
     "new_volumes": 9,
-    "cover_url": "/static/covers/unknown_0PYF78VEQ3J11.jpg"
+    "cover_url": "/static/covers/unknown_0PYF78VEQ3J11.jpg",
+    "author": "みやこかしわ,上棲綴人"
   },
   {
     "num": "137",
@@ -1956,7 +2095,8 @@
     "title_jp": "",
     "new_chapters": 12,
     "new_volumes": 1,
-    "cover_url": "/static/covers/unknown_0PYF78GXV3YFX.jpg"
+    "cover_url": "/static/covers/unknown_0PYF78GXV3YFX.jpg",
+    "author": "丸尾末廣"
   },
   {
     "num": "138",
@@ -1970,7 +2110,8 @@
     "title_jp": "",
     "new_chapters": 12,
     "new_volumes": 1,
-    "cover_url": "/static/covers/unknown_0PYF78GXV3YFV.jpg"
+    "cover_url": "/static/covers/unknown_0PYF78GXV3YFV.jpg",
+    "author": "丸尾末廣"
   },
   {
     "num": "139",
@@ -1984,7 +2125,8 @@
     "title_jp": "",
     "new_chapters": 179,
     "new_volumes": 36,
-    "cover_url": "/static/covers/unknown_0PPFH62EW6JXF.jpg"
+    "cover_url": "/static/covers/unknown_0PPFH62EW6JXF.jpg",
+    "author": "ひらかわあや"
   },
   {
     "num": "140",
@@ -2012,7 +2154,8 @@
     "title_jp": "",
     "new_chapters": 1260,
     "new_volumes": 105,
-    "cover_url": "/static/covers/unknown_0PQK5QNNM6VHK.jpg"
+    "cover_url": "/static/covers/unknown_0PQK5QNNM6VHK.jpg",
+    "author": "Animage、BRUTUS、Fine、GO、GOETHE、Hobby、LDK、MENS、MonoMax、MONOQLO、POPEYE、Precious、VERY、ぷっちぐみ、アニメディア、週刊ファミ通、25ans、AERA、BLT、Bs-LOG、BUBKA、CLASSY、Cotton、dancyu、ELLE、GINZA、GLOW、LEE、MonoMaster、Pen、Ray、Seventeen、smart、STORY、VoCE、クロワッサン、レタスクラブ、大人のおしゃれ手帖、妇人画报、男の隠れ家、BRODY、CanCam、Casa、CREA、Discover、Disney、EVEN、InRed、JUNON、LADY、LEON、Lightning、MAQUIA、Mens、NAIL、NHKきょうの料理、NHKきょうの料理Beginners、NHKすてきにハンドメイド、nonno、Numero、OCEANS、Oggi、poroco、PREPPY、Safari、SPUR、UOMO、ViVi、うかたま、达芬奇、パッチワーク教室、ビーズfriend、周刊Animage、天然生活、散步达人、旅行与铁路、日经WOMAN、月刊Television、无印良品：让我回归舒适状态的自我护理研究、美的、anan、CYAN、FUDGE、猫びより、趣味の文具箱、OZmagazine、Sweet、美的GRAND、3分クッキング、andGIRL、Begin、2nd、LARME、PEAKS、SCawaii、橘页生活、キラピチ、日本全国可爱的美术馆之旅、栄養と料理、素敵なあの人、FIGARO、kunel、Premium、デジタルカメラマガジン、リンネル、日经娱乐、FINEBOYS、Galpara、kiitos、Zipper"
   },
   {
     "num": "142",
@@ -2026,7 +2169,8 @@
     "title_jp": "",
     "new_chapters": 240,
     "new_volumes": 20,
-    "cover_url": "/static/covers/unknown_0PYCYD0K33H9A.jpg"
+    "cover_url": "/static/covers/unknown_0PYCYD0K33H9A.jpg",
+    "author": "藤沢亨"
   },
   {
     "num": "143",
@@ -2040,7 +2184,8 @@
     "title_jp": "",
     "new_chapters": 144,
     "new_volumes": 12,
-    "cover_url": "/static/covers/unknown_0PYCYD0JV3XKX.jpg"
+    "cover_url": "/static/covers/unknown_0PYCYD0JV3XKX.jpg",
+    "author": "藤沢亨"
   },
   {
     "num": "144",
@@ -2054,7 +2199,8 @@
     "title_jp": "",
     "new_chapters": 48,
     "new_volumes": 4,
-    "cover_url": "/static/covers/unknown_0PYCYD0JQ3PET.jpg"
+    "cover_url": "/static/covers/unknown_0PYCYD0JQ3PET.jpg",
+    "author": "士郎正宗"
   },
   {
     "num": "145",
@@ -2068,7 +2214,8 @@
     "title_jp": "",
     "new_chapters": 84,
     "new_volumes": 7,
-    "cover_url": "/static/covers/unknown_0PYCYD0JK3KZ8.jpg"
+    "cover_url": "/static/covers/unknown_0PYCYD0JK3KZ8.jpg",
+    "author": "大山タクミ,藤咲淳一"
   },
   {
     "num": "146",
@@ -2082,7 +2229,8 @@
     "title_jp": "",
     "new_chapters": 48,
     "new_volumes": 4,
-    "cover_url": "/static/covers/unknown_0PYCYD0JK3KZ3.jpg"
+    "cover_url": "/static/covers/unknown_0PYCYD0JK3KZ3.jpg",
+    "author": "士郎正宗"
   },
   {
     "num": "147",
@@ -2096,7 +2244,8 @@
     "title_jp": "",
     "new_chapters": 12,
     "new_volumes": 1,
-    "cover_url": "/static/covers/unknown_0PYCYD0JK3KZ0.jpg"
+    "cover_url": "/static/covers/unknown_0PYCYD0JK3KZ0.jpg",
+    "author": "古屋兔丸"
   },
   {
     "num": "148",
@@ -2110,7 +2259,8 @@
     "title_jp": "",
     "new_chapters": 36,
     "new_volumes": 3,
-    "cover_url": "/static/covers/unknown_0PYCYCVV73ZTM.jpg"
+    "cover_url": "/static/covers/unknown_0PYCYCVV73ZTM.jpg",
+    "author": "岸本斉史,平健史"
   },
   {
     "num": "149",
@@ -2139,7 +2289,8 @@
     "title_jp": "",
     "new_chapters": 60,
     "new_volumes": 5,
-    "cover_url": "/static/covers/unknown_0PY4XA9FF3K0K.jpg"
+    "cover_url": "/static/covers/unknown_0PY4XA9FF3K0K.jpg",
+    "author": "弘兼憲史"
   },
   {
     "num": "151",
@@ -2153,7 +2304,8 @@
     "title_jp": "",
     "new_chapters": 156,
     "new_volumes": 13,
-    "cover_url": "/static/covers/unknown_0PY4XA9FB3Z18.jpg"
+    "cover_url": "/static/covers/unknown_0PY4XA9FB3Z18.jpg",
+    "author": "弘兼憲史"
   },
   {
     "num": "152",
@@ -2167,7 +2319,8 @@
     "title_jp": "",
     "new_chapters": 72,
     "new_volumes": 6,
-    "cover_url": "/static/covers/unknown_0PY4XA9FB3Z11.jpg"
+    "cover_url": "/static/covers/unknown_0PY4XA9FB3Z11.jpg",
+    "author": "弘兼憲史"
   },
   {
     "num": "153",
@@ -2181,7 +2334,8 @@
     "title_jp": "",
     "new_chapters": 48,
     "new_volumes": 4,
-    "cover_url": "/static/covers/unknown_0PY4XA9F73KH5.jpg"
+    "cover_url": "/static/covers/unknown_0PY4XA9F73KH5.jpg",
+    "author": "弘兼憲史"
   },
   {
     "num": "154",
@@ -2195,7 +2349,8 @@
     "title_jp": "",
     "new_chapters": 192,
     "new_volumes": 16,
-    "cover_url": "/static/covers/unknown_0PY4XA9F73KGM.jpg"
+    "cover_url": "/static/covers/unknown_0PY4XA9F73KGM.jpg",
+    "author": "弘兼憲史"
   },
   {
     "num": "155",
@@ -2209,7 +2364,8 @@
     "title_jp": "",
     "new_chapters": 60,
     "new_volumes": 5,
-    "cover_url": "/static/covers/unknown_0PY4XA9F33R10.jpg"
+    "cover_url": "/static/covers/unknown_0PY4XA9F33R10.jpg",
+    "author": "弘兼憲史"
   },
   {
     "num": "156",
@@ -2223,7 +2379,8 @@
     "title_jp": "",
     "new_chapters": 72,
     "new_volumes": 6,
-    "cover_url": "/static/covers/unknown_0PY4XA9F33R0S.jpg"
+    "cover_url": "/static/covers/unknown_0PY4XA9F33R0S.jpg",
+    "author": "弘兼憲史"
   },
   {
     "num": "157",
@@ -2237,7 +2394,8 @@
     "title_jp": "",
     "new_chapters": 48,
     "new_volumes": 4,
-    "cover_url": "/static/covers/unknown_0PY4XA9F33R0M.jpg"
+    "cover_url": "/static/covers/unknown_0PY4XA9F33R0M.jpg",
+    "author": "弘兼憲史"
   },
   {
     "num": "158",
@@ -2251,7 +2409,8 @@
     "title_jp": "",
     "new_chapters": 48,
     "new_volumes": 4,
-    "cover_url": "/static/covers/unknown_0PY4XA9F33R0F.jpg"
+    "cover_url": "/static/covers/unknown_0PY4XA9F33R0F.jpg",
+    "author": "弘兼憲史"
   },
   {
     "num": "159",
@@ -2265,7 +2424,8 @@
     "title_jp": "",
     "new_chapters": 96,
     "new_volumes": 8,
-    "cover_url": "/static/covers/unknown_0PY4XA9EZ3ZZN.jpg"
+    "cover_url": "/static/covers/unknown_0PY4XA9EZ3ZZN.jpg",
+    "author": "弘兼憲史"
   },
   {
     "num": "160",
@@ -2279,7 +2439,8 @@
     "title_jp": "",
     "new_chapters": 156,
     "new_volumes": 13,
-    "cover_url": "/static/covers/unknown_0PY4XA9EV3G0R.jpg"
+    "cover_url": "/static/covers/unknown_0PY4XA9EV3G0R.jpg",
+    "author": "弘兼憲史"
   },
   {
     "num": "161",
@@ -2293,7 +2454,8 @@
     "title_jp": "",
     "new_chapters": 204,
     "new_volumes": 17,
-    "cover_url": "/static/covers/unknown_0PY4XA9EQ3Z1S.jpg"
+    "cover_url": "/static/covers/unknown_0PY4XA9EQ3Z1S.jpg",
+    "author": "弘兼憲史"
   },
   {
     "num": "162",
@@ -2307,7 +2469,8 @@
     "title_jp": "",
     "new_chapters": 48,
     "new_volumes": 4,
-    "cover_url": "/static/covers/unknown_0PY4XA9EQ3Z1K.jpg"
+    "cover_url": "/static/covers/unknown_0PY4XA9EQ3Z1K.jpg",
+    "author": "柿原優子,ヤス"
   },
   {
     "num": "163",
@@ -2321,7 +2484,8 @@
     "title_jp": "",
     "new_chapters": 36,
     "new_volumes": 3,
-    "cover_url": "/static/covers/unknown_0PY4XA9EQ3Z1F.jpg"
+    "cover_url": "/static/covers/unknown_0PY4XA9EQ3Z1F.jpg",
+    "author": "黒野環奈,和泉美緒,清水茜"
   },
   {
     "num": "164",
@@ -2335,7 +2499,8 @@
     "title_jp": "",
     "new_chapters": 120,
     "new_volumes": 10,
-    "cover_url": "/static/covers/unknown_0PY4XA9EK3M0D.jpg"
+    "cover_url": "/static/covers/unknown_0PY4XA9EK3M0D.jpg",
+    "author": "原田重光,清水茜,初嘉屋一生"
   },
   {
     "num": "165",
@@ -2349,7 +2514,8 @@
     "title_jp": "",
     "new_chapters": 36,
     "new_volumes": 3,
-    "cover_url": "/static/covers/unknown_0PY4XA9EK3M09.jpg"
+    "cover_url": "/static/covers/unknown_0PY4XA9EK3M09.jpg",
+    "author": "福田泰宏"
   },
   {
     "num": "166",
@@ -2363,7 +2529,8 @@
     "title_jp": "",
     "new_chapters": 72,
     "new_volumes": 6,
-    "cover_url": "/static/covers/unknown_0PY4XA9EK3M02.jpg"
+    "cover_url": "/static/covers/unknown_0PY4XA9EK3M02.jpg",
+    "author": "清水茜"
   },
   {
     "num": "167",
@@ -2377,7 +2544,8 @@
     "title_jp": "",
     "new_chapters": 48,
     "new_volumes": 4,
-    "cover_url": "/static/covers/unknown_0PY4XA9EK3KZX.jpg"
+    "cover_url": "/static/covers/unknown_0PY4XA9EK3KZX.jpg",
+    "author": "乙川燈,原田重光,清水茜"
   },
   {
     "num": "168",
@@ -2391,7 +2559,8 @@
     "title_jp": "",
     "new_chapters": 12,
     "new_volumes": 1,
-    "cover_url": "/static/covers/unknown_0PY4XA9EK3KZV.jpg"
+    "cover_url": "/static/covers/unknown_0PY4XA9EK3KZV.jpg",
+    "author": "清水茜,蟹江鉄史"
   },
   {
     "num": "172",
@@ -2405,7 +2574,8 @@
     "title_jp": "",
     "new_chapters": 39,
     "new_volumes": 8,
-    "cover_url": "/static/covers/unknown_0PY4XA3WK3W44.jpg"
+    "cover_url": "/static/covers/unknown_0PY4XA3WK3W44.jpg",
+    "author": "岸本斉史,平健史"
   },
   {
     "num": "173",
@@ -2419,7 +2589,8 @@
     "title_jp": "",
     "new_chapters": 1176,
     "new_volumes": 98,
-    "cover_url": "/static/covers/unknown_0PY1GY9YQ3Z7X.jpg"
+    "cover_url": "/static/covers/unknown_0PY1GY9YQ3Z7X.jpg",
+    "author": "克亞樹"
   },
   {
     "num": "175",
@@ -2434,7 +2605,8 @@
     "new_chapters": 170,
     "new_volumes": 23,
     "komga_series_id": "0K2H3AAR91SSC",
-    "cover_url": "/static/covers/unknown_0PY1GY9XK3RFN.jpg"
+    "cover_url": "/static/covers/unknown_0PY1GY9XK3RFN.jpg",
+    "author": "椿泉"
   },
   {
     "num": "177",
@@ -2462,7 +2634,8 @@
     "title_jp": "",
     "new_chapters": 180,
     "new_volumes": 15,
-    "cover_url": "/static/covers/unknown_0PTFJFW9QTJ6X.jpg"
+    "cover_url": "/static/covers/unknown_0PTFJFW9QTJ6X.jpg",
+    "author": "岡田和人"
   },
   {
     "name": "和雨·和你",
@@ -2475,6 +2648,7 @@
     "new_chapters": 0,
     "new_status": "RELEASING",
     "komga_series_id": "0MD7JM0VG6QM6",
-    "cover_url": "/static/covers/unknown_0MD7JM0VG6QM6.jpg"
+    "cover_url": "/static/covers/unknown_0MD7JM0VG6QM6.jpg",
+    "author": "二階堂幸"
   }
 ]
